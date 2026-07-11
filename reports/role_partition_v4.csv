@@ -1,0 +1,5 @@
+bucket,label,abs_count,corpus_n,share_pct
+R1,R1 Specific Ca2+ junctions,75,464,16.16
+R2,R2 Non-specific Ca2+ crosslink,66,464,14.22
+R3,R3 -OH H-bond glue,40,464,8.62
+Other,Other (R4 + incumbents + none),283,464,60.99

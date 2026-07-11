@@ -1,0 +1,63 @@
+{
+  "seed": 10,
+  "n_trials_per_family": 100,
+  "library_size": 500,
+  "family_size": {
+    "svr": 100,
+    "ann": 100,
+    "gp": 100,
+    "xgb": 100,
+    "rf": 100
+  },
+  "caruana_oof_score": 0.6478920175021623,
+  "caruana_family_count": {
+    "svr": 1,
+    "ann": 2,
+    "gp": 0,
+    "xgb": 5,
+    "rf": 0
+  },
+  "caruana_family_weight": {
+    "svr": 0.40384615384615385,
+    "ann": 0.15384615384615385,
+    "gp": 0.0,
+    "xgb": 0.44230769230769235,
+    "rf": 0.0
+  },
+  "metrics": {
+    "baseline_ann": {
+      "r2": 0.8136654013097713,
+      "mre": 45.2306465263392,
+      "mae": 0.6258011552139565,
+      "winner": "pytorch_ann",
+      "best_params": {
+        "n_layers": 2,
+        "hidden_0": 64,
+        "hidden_1": 32,
+        "dropout": 0.3487822817464159,
+        "activation": "relu",
+        "lr": 0.00032537358539285263,
+        "weight_decay": 0.0004793535039864751,
+        "batch_size": 16,
+        "epochs": 404
+      }
+    },
+    "caruana": {
+      "r2": 0.8519062128725413,
+      "mae": 0.634735670603076,
+      "mre": 46.47467001037629
+    },
+    "ridge_stacker": {
+      "r2": 0.8484773640794894,
+      "mae": 0.6374446622863255,
+      "mre": 47.71053434945198,
+      "alpha": 1.0
+    },
+    "gb_stacker": {
+      "r2": 0.8275008549848045,
+      "mae": 0.7257325260495338,
+      "mre": 52.69075216671107
+    }
+  },
+  "best_combiner": "caruana"
+}
