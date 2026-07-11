@@ -1,0 +1,130 @@
+{
+  "members": [
+    {
+      "index": 0,
+      "file": "member_0.pt",
+      "library_key": "ann_136",
+      "weight": 0.5555555555555556,
+      "cv_mae": 0.13832415601931808,
+      "params": {
+        "n_layers": 3,
+        "hidden_0": 192,
+        "hidden_1": 124,
+        "hidden_2": 29,
+        "dropout": 0.05511741437112208,
+        "activation": "elu",
+        "lr": 0.0008696761278919815,
+        "weight_decay": 1.954040973912695e-06,
+        "batch_size": 16,
+        "epochs": 609
+      }
+    },
+    {
+      "index": 1,
+      "file": "member_1.pt",
+      "library_key": "ann_46",
+      "weight": 0.1111111111111111,
+      "cv_mae": 0.14340129814468874,
+      "params": {
+        "n_layers": 4,
+        "hidden_0": 134,
+        "hidden_1": 62,
+        "hidden_2": 65,
+        "hidden_3": 27,
+        "dropout": 0.19115090960949832,
+        "activation": "relu",
+        "lr": 0.0005108372195164986,
+        "weight_decay": 4.9855126389274615e-06,
+        "batch_size": 16,
+        "epochs": 384
+      }
+    },
+    {
+      "index": 2,
+      "file": "member_2.pt",
+      "library_key": "ann_110",
+      "weight": 0.16666666666666666,
+      "cv_mae": 0.15456582776728675,
+      "params": {
+        "n_layers": 5,
+        "hidden_0": 71,
+        "hidden_1": 106,
+        "hidden_2": 88,
+        "hidden_3": 58,
+        "hidden_4": 93,
+        "dropout": 0.000664283069920213,
+        "activation": "relu",
+        "lr": 0.002922880868253339,
+        "weight_decay": 1.0085540728465254e-06,
+        "batch_size": 16,
+        "epochs": 255
+      }
+    },
+    {
+      "index": 3,
+      "file": "member_3.pt",
+      "library_key": "ann_31",
+      "weight": 0.05555555555555555,
+      "cv_mae": 0.15827776474467584,
+      "params": {
+        "n_layers": 2,
+        "hidden_0": 70,
+        "hidden_1": 109,
+        "dropout": 0.2777049742571546,
+        "activation": "elu",
+        "lr": 0.00021848057985568805,
+        "weight_decay": 0.0002584482397166096,
+        "batch_size": 32,
+        "epochs": 212
+      }
+    },
+    {
+      "index": 4,
+      "file": "member_4.pt",
+      "library_key": "ann_85",
+      "weight": 0.05555555555555555,
+      "cv_mae": 0.1534666618894484,
+      "params": {
+        "n_layers": 5,
+        "hidden_0": 143,
+        "hidden_1": 173,
+        "hidden_2": 84,
+        "hidden_3": 109,
+        "hidden_4": 95,
+        "dropout": 0.23484957621479224,
+        "activation": "elu",
+        "lr": 0.0027834955361779323,
+        "weight_decay": 1.051410686297621e-05,
+        "batch_size": 32,
+        "epochs": 449
+      }
+    },
+    {
+      "index": 5,
+      "file": "member_5.pt",
+      "library_key": "ann_48",
+      "weight": 0.05555555555555555,
+      "cv_mae": 0.1579056026477877,
+      "params": {
+        "n_layers": 5,
+        "hidden_0": 104,
+        "hidden_1": 158,
+        "hidden_2": 76,
+        "hidden_3": 101,
+        "hidden_4": 115,
+        "dropout": 0.33942419550944986,
+        "activation": "leaky_relu",
+        "lr": 0.002326149308910346,
+        "weight_decay": 3.964302882032117e-05,
+        "batch_size": 32,
+        "epochs": 583
+      }
+    }
+  ],
+  "aug_kw": {
+    "n_augment": 10,
+    "feature_scale": 0.05,
+    "label_scale": 0.05
+  },
+  "best_seed": 16
+}

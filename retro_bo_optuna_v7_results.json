@@ -1,0 +1,755 @@
+{
+  "metadata": {
+    "version": "optuna_v7",
+    "study_name": "retro_bo_optuna_v7",
+    "grid_size": 173625,
+    "n_jobs": 64,
+    "n_steps": 25,
+    "patience": 6,
+    "time_limit_hours": 12.0,
+    "acquisition": "UCB only (integer beta, beta_r4 <= beta_r3)",
+    "gp": "base_kernel + WhiteKernel, normalize_y=True",
+    "matching": "Hungarian 6x6, round-by-round (R3 grid <-> R3 real, R4 grid <-> R4 real)",
+    "scoring": "3*d_0608 + 3*d_0604 + mean(other_r3) + mean(other_r4)",
+    "distance": "min-max normalized Euclidean",
+    "partition_search": "value-seeded hill-climb, warm-started from the best partition across trials, random-restart on plateau; monotone hard constraint (Method B)",
+    "trial_aggregator": "best score from restarting hill-climb",
+    "n_completed": 1324,
+    "n_total_trials": 1324,
+    "v7_differences": [
+      "NOISE_LEVEL_BOUNDS: (1e-10, 1.0) -> (1e-4, 1.0)",
+      "alpha range: 1e-8..1e-2 -> 1e-4..1e-2",
+      "ls_bounds_low range: 1e-3..1.0 -> 0.05..0.5",
+      "ls_bounds_high range: 1.0..20.0 -> 2.0..10.0",
+      "noise_level_init range: 1e-8..1e-2 -> 1e-4..1e-2"
+    ]
+  },
+  "best_trial": {
+    "trial_number": 700,
+    "value": 0.4169701931911169,
+    "params": {
+      "kernel_type": "rbf",
+      "alpha": 0.00989020802294311,
+      "ls_bounds_low": 0.10276016446645304,
+      "ls_bounds_high": 9.241809135888953,
+      "n_restarts": 10,
+      "noise_level_init": 0.0009610162139701177,
+      "lipschitz_scale": 0.9797571317824716,
+      "beta_r3": 13,
+      "beta_r4": 10,
+      "r3_size": 6,
+      "r4_size": 6
+    },
+    "mgal_0608_dist": 0.003252691193458094,
+    "mgal_0604_dist": 0.014436065946094853,
+    "score_seed": 0.4169701931911169,
+    "score_best": 0.4169701931911169,
+    "n_steps_taken": 25,
+    "n_evaluated": 1603,
+    "partition_ids": {
+      "initial": [
+        "MGAL_0612",
+        "MGAL_0405",
+        "MGAL_0605",
+        "MGAL_0615",
+        "MGAL_0407",
+        "MGAL_0506",
+        "MGAL_0609",
+        "MGAL_0607",
+        "MGAL_0404",
+        "MGAL_0614",
+        "MGAL_0601",
+        "MGAL_0402",
+        "GUM",
+        "MGAL_0611",
+        "MGAL_0616",
+        "MGAL_0610",
+        "MGAL_0507",
+        "MGAL_0603"
+      ],
+      "r3": [
+        "MGAL_0604",
+        "MGAL_0606",
+        "MGAL_0502",
+        "MGAL_0503",
+        "MGAL_0602",
+        "MGAL_0401"
+      ],
+      "r4": [
+        "MGAL_0608",
+        "MGAL_0504",
+        "MGAL_0505",
+        "MGAL_0403",
+        "MGAL_0406",
+        "MGAL_0501"
+      ],
+      "sizes": [
+        18,
+        6,
+        6
+      ]
+    }
+  },
+  "top_10_trials": [
+    {
+      "trial_number": 700,
+      "value": 0.4169701931911169,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.00989020802294311,
+        "ls_bounds_low": 0.10276016446645304,
+        "ls_bounds_high": 9.241809135888953,
+        "n_restarts": 10,
+        "noise_level_init": 0.0009610162139701177,
+        "lipschitz_scale": 0.9797571317824716,
+        "beta_r3": 13,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.014436065946094853,
+      "score_seed": 0.4169701931911169,
+      "score_best": 0.4169701931911169,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 1119,
+      "value": 0.43212926708329175,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.006599077934808872,
+        "ls_bounds_low": 0.09667724186163373,
+        "ls_bounds_high": 8.542251795636068,
+        "n_restarts": 10,
+        "noise_level_init": 0.0009717151118512447,
+        "lipschitz_scale": 0.837296901267861,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.46855665052487583,
+      "score_best": 0.43212926708329175,
+      "n_steps_taken": 25,
+      "n_evaluated": 1602,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0503",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0406",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0614",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 1123,
+      "value": 0.43212926708329175,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.006508343871930172,
+        "ls_bounds_low": 0.09639052919720847,
+        "ls_bounds_high": 8.004084042560423,
+        "n_restarts": 10,
+        "noise_level_init": 0.0009580114184636161,
+        "lipschitz_scale": 0.8371968252527395,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.46855665052487583,
+      "score_best": 0.43212926708329175,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0503",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0406",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0614",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 452,
+      "value": 0.43480100133122995,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.002670110408852344,
+        "ls_bounds_low": 0.09558858596805864,
+        "ls_bounds_high": 7.752882189259345,
+        "n_restarts": 10,
+        "noise_level_init": 0.0019432579425435017,
+        "lipschitz_scale": 0.977310486501426,
+        "beta_r3": 15,
+        "beta_r4": 9,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.0,
+      "mgal_0604_dist": 0.014436065946094853,
+      "score_seed": 0.43480100133122995,
+      "score_best": 0.43480100133122995,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 1285,
+      "value": 0.4362366592686431,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.008658377696779662,
+        "ls_bounds_low": 0.09981890093985113,
+        "ls_bounds_high": 9.624006179711799,
+        "n_restarts": 10,
+        "noise_level_init": 0.0010511519373523237,
+        "lipschitz_scale": 0.8286820910741254,
+        "beta_r3": 10,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.478404826738854,
+      "score_best": 0.4362366592686431,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0503",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0406",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0614",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 727,
+      "value": 0.439232579351161,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.0044381577739201,
+        "ls_bounds_low": 0.10056389100244156,
+        "ls_bounds_high": 8.997428494647847,
+        "n_restarts": 10,
+        "noise_level_init": 0.0009396750540613752,
+        "lipschitz_scale": 1.0000164348567124,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.439232579351161,
+      "score_best": 0.439232579351161,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 732,
+      "value": 0.439232579351161,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.009728807450419076,
+        "ls_bounds_low": 0.1002146360384804,
+        "ls_bounds_high": 8.856813322695652,
+        "n_restarts": 10,
+        "noise_level_init": 0.0007750672789216209,
+        "lipschitz_scale": 1.0132048445696207,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.439232579351161,
+      "score_best": 0.439232579351161,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 736,
+      "value": 0.439232579351161,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.009853450472088524,
+        "ls_bounds_low": 0.10069145733831138,
+        "ls_bounds_high": 8.821961232425718,
+        "n_restarts": 10,
+        "noise_level_init": 0.0007450096153753595,
+        "lipschitz_scale": 1.0099183297069891,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.439232579351161,
+      "score_best": 0.439232579351161,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 771,
+      "value": 0.439232579351161,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.008130831372808206,
+        "ls_bounds_low": 0.10070919852769543,
+        "ls_bounds_high": 8.446830653972668,
+        "n_restarts": 10,
+        "noise_level_init": 0.0008562417573179242,
+        "lipschitz_scale": 0.9930512241319213,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.439232579351161,
+      "score_best": 0.439232579351161,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "trial_number": 855,
+      "value": 0.439232579351161,
+      "params": {
+        "kernel_type": "rbf",
+        "alpha": 0.007976914931926822,
+        "ls_bounds_low": 0.10041729770696169,
+        "ls_bounds_high": 8.63498610514333,
+        "n_restarts": 10,
+        "noise_level_init": 0.0009141463615379587,
+        "lipschitz_scale": 1.0159772452626992,
+        "beta_r3": 11,
+        "beta_r4": 10,
+        "r3_size": 6,
+        "r4_size": 6
+      },
+      "mgal_0608_dist": 0.003252691193458094,
+      "mgal_0604_dist": 0.024584547992590782,
+      "score_seed": 0.439232579351161,
+      "score_best": 0.439232579351161,
+      "n_steps_taken": 25,
+      "n_evaluated": 1603,
+      "partition_ids": {
+        "initial": [
+          "MGAL_0612",
+          "MGAL_0405",
+          "MGAL_0605",
+          "MGAL_0615",
+          "MGAL_0407",
+          "MGAL_0506",
+          "MGAL_0609",
+          "MGAL_0607",
+          "MGAL_0404",
+          "MGAL_0614",
+          "MGAL_0601",
+          "MGAL_0402",
+          "GUM",
+          "MGAL_0611",
+          "MGAL_0616",
+          "MGAL_0610",
+          "MGAL_0507",
+          "MGAL_0603"
+        ],
+        "r3": [
+          "MGAL_0604",
+          "MGAL_0606",
+          "MGAL_0502",
+          "MGAL_0503",
+          "MGAL_0602",
+          "MGAL_0401"
+        ],
+        "r4": [
+          "MGAL_0608",
+          "MGAL_0504",
+          "MGAL_0505",
+          "MGAL_0403",
+          "MGAL_0406",
+          "MGAL_0501"
+        ],
+        "sizes": [
+          18,
+          6,
+          6
+        ]
+      }
+    }
+  ]
+}

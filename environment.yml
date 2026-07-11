@@ -1,0 +1,22 @@
+# Reproduces the environment used to run every notebook in this repo.
+#   conda env create -f environment.yml && conda activate proj_mg_pub
+name: proj_mg_pub
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - numpy==2.1.2
+      - pandas==2.3.1
+      - scipy==1.16.1
+      - scikit-learn==1.7.1
+      - torch==2.5.1
+      - xgboost==3.0.4
+      - optuna==4.4.0
+      - shap==0.48.0
+      - matplotlib==3.10.3
+      - plotly==6.0.1
+      - scikit-image==0.26.0
+      - Pillow==11.0.0
+      - joblib==1.5.1
