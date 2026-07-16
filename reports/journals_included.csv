@@ -1,268 +1,181 @@
-count,journal,publisher_group,type,is_core,in_doaj,host,issn_l
-52,International Journal of Biological Macromolecules,Elsevier,journal,True,False,Elsevier BV,0141-8130
-24,Gels,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2310-2861
-19,Industrial Crops and Products,Elsevier,journal,True,True,Elsevier BV,0926-6690
-18,Scientific Reports,Springer Nature,journal,True,True,Nature Portfolio,2045-2322
-17,Chemical Engineering Journal,Elsevier,journal,True,False,Elsevier BV,1385-8947
-16,Journal of environmental chemical engineering,Elsevier,journal,True,False,Elsevier BV,2213-2929
-15,Journal of Polymers and the Environment,Springer Nature,journal,True,False,Springer Science+Business Media,1566-2543
-13,Journal of Applied Polymer Science,Wiley,journal,True,False,Wiley,0021-8995
-12,Carbohydrate Polymers,Elsevier,journal,True,False,Elsevier BV,0144-8617
-12,Journal of Cleaner Production,Elsevier,journal,True,False,Elsevier BV,0959-6526
-12,Polymers,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,2073-4360
-11,Restoration Ecology,Wiley,journal,True,False,Wiley,1061-2971
-10,ACS Agricultural Science & Technology,ACS,journal,True,False,American Chemical Society,2692-1952
-10,Communications in Soil Science and Plant Analysis,Taylor & Francis,journal,True,False,Taylor & Francis,0010-3624
-10,Polymer Bulletin,Springer Nature,journal,True,False,Springer Science+Business Media,0170-0839
-9,HortScience,ASHS,journal,True,True,American Society for Horticultural Science,0018-5345
-8,Molecules,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,1420-3049
-7,ACS Sustainable Chemistry & Engineering,ACS,journal,True,False,American Chemical Society,2168-0485
-7,Journal of Environmental Management,Elsevier,journal,True,False,Elsevier BV,0301-4797
-7,Plant and Soil,Springer Nature,journal,True,False,Springer Science+Business Media,0032-079X
-6,ACS Omega,ACS,journal,True,True,American Chemical Society,2470-1343
-6,Agriculture,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2077-0472
-6,CLEAN - Soil Air Water,Wiley,journal,True,False,Wiley,1863-0650
-6,Colloids and Surfaces A Physicochemical and Engineering Aspects,Elsevier,journal,True,False,Elsevier BV,0927-7757
-6,International Journal of Molecular Sciences,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,1422-0067
-6,Scientia Horticulturae,Elsevier,journal,True,True,Elsevier BV,0304-4238
-6,The Science of The Total Environment,Elsevier,journal,True,False,Elsevier BV,0048-9697
-5,ACS Applied Polymer Materials,ACS,journal,True,False,American Chemical Society,2637-6105
-5,Cellulose,Springer Nature,journal,True,False,Springer Science+Business Media,0969-0239
-5,Ecological Engineering,Elsevier,journal,True,False,Elsevier BV,0925-8574
-5,European Polymer Journal,Elsevier,journal,True,False,Elsevier BV,0014-3057
-5,Journal of Agricultural and Food Chemistry,ACS,journal,True,False,American Chemical Society,0021-8561
-5,Journal of Hazardous Materials,Elsevier,journal,True,False,Elsevier BV,0304-3894
-5,Journal of Polymer Research,Springer Nature,journal,True,False,Springer Science+Business Media,1022-9760
-5,Langmuir,ACS,journal,True,False,American Chemical Society,0743-7463
-5,Materials,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,1996-1944
-5,Polymers for Advanced Technologies,Wiley,journal,True,False,Wiley,1042-7147
-5,Sustainability,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,2071-1050
-4,ACS Materials Letters,ACS,journal,True,False,American Chemical Society,2639-4979
-4,Agronomy,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2073-4395
-4,ChemistrySelect,Wiley,journal,True,False,Wiley,2365-6549
-4,Focus on Catalysts,Elsevier,journal,True,False,Elsevier BV,1351-4180
-4,Forests,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,1999-4907
-4,Plants,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2223-7747
-4,Polymer,Elsevier,journal,True,False,Elsevier BV,0032-3861
-4,Reactive and Functional Polymers,Elsevier,journal,True,False,Elsevier BV,1381-5148
-3,Acta Horticulturae,ISHS,journal,True,False,International Society for Horticultural Science,0567-7572
-3,Advanced Composites and Hybrid Materials,Springer Nature,journal,True,False,Springer Science+Business Media,2522-0128
-3,Advanced Functional Materials,Wiley,journal,True,False,Wiley,1616-301X
-3,Agricultural Water Management,Elsevier,journal,True,True,Elsevier BV,0378-3774
-3,Analytica Chimica Acta,Elsevier,journal,True,False,Elsevier BV,0003-2670
-3,Chemical Papers,Springer Nature,journal,True,False,Springer Science+Business Media,0366-6352
-3,Desalination,Elsevier,journal,True,False,Elsevier BV,0011-9164
-3,Ecotoxicology and Environmental Safety,Elsevier,journal,True,True,Elsevier BV,0147-6513
-3,Environmental and Experimental Botany,Elsevier,journal,True,True,Elsevier BV,0098-8472
-3,Environmental Technology & Innovation,Elsevier,journal,True,True,Elsevier BV,2352-1864
-3,Frontiers in Plant Science,Frontiers,journal,True,True,Frontiers Media,1664-462X
-3,HortTechnology,ASHS,journal,True,True,American Society for Horticultural Science,1063-0198
-3,Journal of Agriculture and Food Research,Elsevier,journal,True,True,Elsevier BV,2666-1543
-3,Journal of Composites Science,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,2504-477X
-3,Journal of Materials Science,Springer Nature,journal,True,False,Springer Science+Business Media,0022-2461
-3,Journal of soil science and plant nutrition,Springer Nature,journal,True,False,Springer Science+Business Media,0718-9508
-3,Materials Today Communications,Elsevier,journal,True,False,Elsevier BV,2352-4928
-3,Pedosphere,Elsevier,journal,True,False,Elsevier BV,1002-0160
-3,Radiation Physics and Chemistry,Elsevier,journal,True,False,Elsevier BV,0969-806X
-3,Rangeland Ecology & Management,Elsevier,journal,True,False,Elsevier BV,1550-7424
-3,RSC Advances,RSC,journal,True,True,Royal Society of Chemistry,2046-2069
-3,Separation and Purification Technology,Elsevier,journal,True,False,Elsevier BV,1383-5866
-3,Starch - Stärke,Wiley,journal,True,False,Wiley,0038-9056
-2,ACS Applied Materials & Interfaces,ACS,journal,True,False,American Chemical Society,1944-8244
-2,Agronomy Journal,Wiley,journal,True,False,Wiley,0002-1962
-2,Applied Sciences,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2076-3417
-2,Biotechnology Reports,Elsevier,journal,True,True,Elsevier BV,2215-017X
-2,Carbohydrate Polymer Technologies and Applications,Elsevier,journal,True,True,Elsevier BV,2666-8939
-2,Case Studies in Chemical and Environmental Engineering,Elsevier,journal,True,True,Elsevier BV,2666-0164
-2,Desalination and Water Treatment,Taylor & Francis,journal,True,True,Taylor & Francis,1944-3986
-2,Environment Development and Sustainability,Springer Nature,journal,True,False,Springer Science+Business Media,1387-585X
-2,Environmental Research,Elsevier,journal,True,False,Elsevier BV,0013-9351
-2,Food Hydrocolloids,Elsevier,journal,True,False,Elsevier BV,0268-005X
-2,Forest Ecology and Management,Elsevier,journal,True,False,Elsevier BV,0378-1127
-2,Frontiers in Microbiology,Frontiers,journal,True,True,Frontiers Media,1664-302X
-2,Global Challenges,Wiley,journal,True,True,Wiley,2056-6646
-2,Horticulturae,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2311-7524
-2,Irrigation and Drainage,Wiley,journal,True,False,Wiley,1531-0353
-2,Journal of Agronomy and Crop Science,Wiley,journal,True,False,Wiley,0931-2250
-2,Journal of Arid Environments,Elsevier,journal,True,False,Elsevier BV,0140-1963
-2,Journal of Colloid and Interface Science,Elsevier,journal,True,False,Elsevier BV,0021-9797
-2,Journal of Forestry Research,Springer Nature,journal,True,False,Springer Science+Business Media,1007-662X
-2,Journal of Plant Nutrition,Taylor & Francis,journal,True,False,Taylor & Francis,0190-4167
-2,Journal of Sustainable Agriculture and Environment,Wiley,journal,True,True,Wiley,2767-035X
-2,Macromolecular Symposia,Wiley,journal,True,False,Wiley,1022-1360
-2,Materials Chemistry and Physics,Elsevier,journal,True,False,Elsevier BV,0254-0584
-2,Nature Communications,Springer Nature,journal,True,True,Nature Portfolio,2041-1723
-2,New Forests,Springer Nature,journal,True,False,Springer Science+Business Media,0169-4286
-2,Next Materials,Elsevier,journal,True,True,Elsevier BV,2949-8228
-2,Polymer International,Wiley,journal,True,False,Wiley,0959-8103
-2,Process Safety and Environmental Protection,Elsevier,journal,True,False,Elsevier BV,0263-8762
-2,Progress in Organic Coatings,Elsevier,journal,True,False,Elsevier BV,0300-9440
-2,Rhizosphere,Elsevier,journal,True,False,Elsevier BV,2452-2198
-2,Sensors and Actuators B Chemical,Elsevier,journal,True,False,Elsevier BV,0925-4005
-2,Small,Wiley,journal,True,False,Wiley,1613-6810
-2,Soft Matter,RSC,journal,True,False,Royal Society of Chemistry,1744-683X
-2,Soil Systems,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2571-8789
-2,Spectrochimica Acta Part A Molecular and Biomolecular Spectroscopy,Elsevier,journal,True,False,Elsevier BV,1386-1425
-2,Water,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,2073-4441
-1,ACS Applied Bio Materials,ACS,journal,True,False,American Chemical Society,2576-6422
-1,ACS ES&T Engineering,ACS,journal,True,False,American Chemical Society,2690-0645
-1,ACS ES&T Water,ACS,journal,True,False,American Chemical Society,2690-0637
-1,ACS Nano,ACS,journal,True,False,American Chemical Society,1936-0851
-1,Acta Agriculturae Scandinavica Section B - Soil & Plant Science,Taylor & Francis,journal,True,True,Taylor & Francis,0906-4710
-1,Acta Physiologiae Plantarum,Springer Nature,journal,True,False,Springer Science+Business Media,0137-5881
-1,Advanced Engineering Materials,Wiley,journal,True,False,Wiley,1438-1656
-1,Advanced Sensor Research,Wiley,journal,True,True,Wiley,2751-1219
-1,Advances in Materials Science and Engineering,Wiley,journal,True,True,Hindawi Publishing Corporation,1687-8434
-1,Advances in Polymer Technology,Wiley,journal,True,True,Wiley,0730-6679
-1,Advances in Traditional Medicine,Springer Nature,journal,True,False,Springer Nature,2662-4052
-1,Agriculture and Agricultural Science Procedia,Elsevier,journal,True,False,Elsevier BV,2210-7843
-1,AgriEngineering,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2624-7402
-1,Algal Research,Elsevier,journal,True,False,Elsevier BV,2211-9264
-1,Analytical Chemistry,ACS,journal,True,False,American Chemical Society,0003-2700
-1,Annales de Pathologie,Elsevier,journal,True,False,Elsevier BV,0242-6498
-1,Annals of Forest Science,Springer Nature,journal,True,True,Springer Science+Business Media,1286-4560
-1,Applied Materials Today,Elsevier,journal,True,False,Elsevier BV,2352-9407
-1,Applied Microbiology and Biotechnology,Springer Nature,journal,True,True,Springer Science+Business Media,0175-7598
-1,Applied Soil Ecology,Elsevier,journal,True,False,Elsevier BV,0929-1393
-1,Archives of Agronomy and Soil Science,Taylor & Francis,journal,True,True,Taylor & Francis,0365-0340
-1,Arid Soil Research and Rehabilitation,Taylor & Francis,journal,True,False,Taylor & Francis,0890-3069
-1,Biomacromolecules,ACS,journal,True,False,American Chemical Society,1525-7797
-1,Biomass and Bioenergy,Elsevier,journal,True,False,Elsevier BV,0961-9534
-1,Biomass Conversion and Biorefinery,Springer Nature,journal,True,False,Springer Nature,2190-6815
-1,Biomolecules,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2218-273X
-1,BioNanoScience,Springer Nature,journal,True,False,Springer Science+Business Media,2191-1630
-1,Bioresource Technology,Elsevier,journal,True,False,Elsevier BV,0960-8524
-1,BMC Plant Biology,Springer Nature,journal,True,True,BioMed Central,1471-2229
-1,Bulletin of Materials Science,Springer Nature,journal,True,False,Springer Science+Business Media,0250-4707
-1,Carbohydrate Research,Elsevier,journal,True,False,Elsevier BV,0008-6215
-1,Cereal Research Communications,Springer Nature,journal,True,False,Springer Science+Business Media,0133-3720
-1,Chem & Bio Engineering,ACS,journal,True,True,American Chemical Society,2836-967X
-1,Chemical and Biological Technologies in Agriculture,Springer Nature,journal,True,True,Springer Nature,2196-5641
-1,Chemical Communications,RSC,journal,True,False,Royal Society of Chemistry,1359-7345
-1,Chemosphere,Elsevier,journal,True,False,Elsevier BV,0045-6535
-1,Composites Part B Engineering,Elsevier,journal,True,False,Elsevier BV,1359-8368
-1,Compost Science & Utilization,Taylor & Francis,journal,True,False,Taylor & Francis,1065-657X
-1,Current Opinion in Food Science,Elsevier,journal,True,False,Elsevier BV,2214-7993
-1,Discover Agriculture,Springer Nature,journal,False,True,Springer Science+Business Media,2731-9598
-1,Discover Environment,Springer Nature,journal,False,True,Springer Science+Business Media,2731-9431
-1,Discover Materials,Springer Nature,journal,True,True,Springer Nature,2730-7727
-1,Discover Sustainability,Springer Nature,journal,True,True,Springer Nature,2662-9984
-1,Ecohydrology & Hydrobiology,Elsevier,journal,True,False,Elsevier BV,1642-3593
-1,Ecological Management & Restoration,Wiley,journal,True,False,Wiley,1442-7001
-1,Electronic Journal of Biotechnology,Elsevier,journal,True,True,Elsevier BV,0717-3458
-1,Emergent Materials,Springer Nature,journal,True,False,Springer Science+Business Media,2522-5731
-1,Energy,Elsevier,journal,True,False,Elsevier BV,0360-5442
-1,Engineering Geology,Elsevier,journal,True,False,Elsevier BV,0013-7952
-1,Environmental Chemistry Letters,Springer Nature,journal,True,False,Springer Science+Business Media,1610-3653
-1,Environmental Development,Elsevier,journal,True,False,Elsevier BV,2211-4645
-1,Environmental Earth Sciences,Springer Nature,journal,True,False,Springer Science+Business Media,1866-6280
-1,Environmental Quality Management,Wiley,journal,True,False,Wiley,1088-1913
-1,Environmental Science and Pollution Research,Springer Nature,journal,True,False,Springer Science+Business Media,0944-1344
-1,Environmental Sustainability,Springer Nature,journal,True,False,Springer Science+Business Media,2523-8922
-1,Environmental Technology,Taylor & Francis,journal,True,False,Taylor & Francis,0959-3330
-1,Euro-Mediterranean Journal for Environmental Integration,Springer Nature,journal,True,False,Springer Science+Business Media,2365-6433
-1,European Journal of Agronomy,Elsevier,journal,True,False,Elsevier BV,1161-0301
-1,Fibers,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2079-6439
-1,Flora oder Allgemeine Botanische Zeitung,Elsevier,journal,False,False,Elsevier BV,0367-1615
-1,Forest Policy and Economics,Elsevier,journal,True,False,Elsevier BV,1389-9341
-1,Frontiers in Astronomy and Space Sciences,Frontiers,journal,True,True,Frontiers Media,2296-987X
-1,Frontiers in Environmental Science,Frontiers,journal,True,True,Frontiers Media,2296-665X
-1,Frontiers in Forests and Global Change,Frontiers,journal,True,True,Frontiers Media,2624-893X
-1,Frontiers in Life Science,Taylor & Francis,journal,True,False,Taylor & Francis,2155-3769
-1,Geoderma,Elsevier,journal,True,True,Elsevier BV,0016-7061
-1,Geoderma Regional,Elsevier,journal,True,False,Elsevier BV,2352-0094
-1,Giant,Elsevier,journal,True,True,Elsevier BV,2666-5425
-1,Grasses,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2813-3463
-1,Groundwater for Sustainable Development,Elsevier,journal,True,False,Elsevier BV,2352-801X
-1,Heliyon,Elsevier,journal,True,True,Elsevier BV,2405-8440
-1,In Vitro Cellular & Developmental Biology - Plant,Springer Nature,journal,True,False,Springer Science+Business Media,1054-5476
-1,Industrial & Engineering Chemistry Research,ACS,journal,True,False,American Chemical Society,0888-5885
-1,Insects,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2075-4450
-1,International Journal of Biomaterials,Wiley,journal,True,True,Hindawi Publishing Corporation,1687-8787
-1,International Journal of Chemical Engineering,Wiley,journal,True,True,Hindawi Publishing Corporation,1687-806X
-1,International Journal of Environmental Science and Technology,Springer Nature,journal,True,False,Springer Science+Business Media,1735-1472
-1,International Journal of Plastics Technology,Springer Nature,journal,True,False,Springer Science+Business Media,0972-656X
-1,International Journal of Polymer Analysis and Characterization,Taylor & Francis,journal,True,False,Taylor & Francis,1023-666X
-1,International Journal of Polymer Science,Wiley,journal,True,True,Hindawi Publishing Corporation,1687-9422
-1,International Journal Of Recycling of Organic Waste in Agriculture,Springer Nature,journal,True,True,Springer Nature,2195-3228
-1,International Soil and Water Conservation Research,Elsevier,journal,True,True,Elsevier BV,2095-6339
-1,Journal of Applied Ecology,Wiley,journal,True,False,Wiley,0021-8901
-1,Journal of Bioresources and Bioproducts,Elsevier,journal,True,True,Elsevier BV,2369-9698
-1,Journal of Chromatography A,Elsevier,journal,True,False,Elsevier BV,0021-9673
-1,Journal of Controlled Release,Elsevier,journal,True,False,Elsevier BV,0168-3659
-1,Journal of Crop Health,Springer Nature,journal,False,False,Springer Science+Business Media,2948-264X
-1,Journal of Electroanalytical Chemistry,Elsevier,journal,True,False,Elsevier BV,1572-6657
-1,Journal of Food Science,Wiley,journal,True,False,Wiley,0022-1147
-1,Journal of Fungi,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2309-608X
-1,Journal of Hazardous Materials Advances,Elsevier,journal,True,True,Elsevier BV,2772-4166
-1,Journal of Industrial and Engineering Chemistry,Elsevier,journal,True,False,Elsevier BV,1226-086X
-1,Journal of Molecular Liquids,Elsevier,journal,True,False,Elsevier BV,0167-7322
-1,Journal of Molecular Structure,Elsevier,journal,True,False,Elsevier BV,0022-2860
-1,Journal of Plant Growth Regulation,Springer Nature,journal,True,False,Springer Science+Business Media,0721-7595
-1,Journal of Plant Nutrition and Soil Science,Wiley,journal,True,False,Wiley,1436-8730
-1,Journal of Plant Physiology,Elsevier,journal,True,False,Elsevier BV,0176-1617
-1,Journal of Porous Materials,Springer Nature,journal,True,False,Springer Science+Business Media,1380-2224
-1,Journal of Rock Mechanics and Geotechnical Engineering,Elsevier,journal,True,True,Elsevier BV,1674-7755
-1,Journal of Soils and Sediments,Springer Nature,journal,True,False,Springer Science+Business Media,1439-0108
-1,Journal of the Science of Food and Agriculture,Wiley,journal,True,False,Wiley,0022-5142
-1,Journal of Thermal Analysis and Calorimetry,Springer Nature,journal,True,False,Springer Science+Business Media,1388-6150
-1,Journal of Water Process Engineering,Elsevier,journal,True,False,Elsevier BV,2214-7144
-1,Land,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2073-445X
-1,Land Degradation and Development,Wiley,journal,True,False,Wiley,1085-3278
-1,Landscape and Urban Planning,Elsevier,journal,True,False,Elsevier BV,0169-2046
-1,Legume Science,Wiley,journal,True,True,Wiley,2639-6181
-1,Life,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2075-1729
-1,Life Sciences in Space Research,Elsevier,journal,True,False,Elsevier BV,2214-5524
-1,Marine Drugs,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,1660-3397
-1,Materials Horizons,RSC,journal,True,False,Royal Society of Chemistry,2051-6347
-1,Materials Science and Engineering B,Elsevier,journal,True,False,Elsevier BV,0921-5107
-1,Materials Science and Engineering C,Elsevier,journal,True,False,Elsevier BV,0928-4931
-1,Materials Today Proceedings,Elsevier,journal,True,False,Elsevier BV,2214-7853
-1,Materials Today Sustainability,Elsevier,journal,True,True,Elsevier BV,2589-2347
-1,Microchemical Journal,Elsevier,journal,True,False,Elsevier BV,0026-265X
-1,Microsystems & Nanoengineering,Springer Nature,journal,True,True,Springer Nature,2055-7434
-1,Modern Agriculture,Wiley,journal,True,True,Wiley,2751-4102
-1,Molecular Omics,RSC,journal,True,False,Royal Society of Chemistry,2515-4184
-1,Nano Today,Elsevier,journal,True,False,Elsevier BV,1748-0132
-1,Nanomaterials,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,2079-4991
-1,Nanoscale,RSC,journal,True,False,Royal Society of Chemistry,2040-3364
-1,Natural Product Research,Taylor & Francis,journal,True,False,Taylor & Francis,1478-6419
-1,Nature Food,Springer Nature,journal,True,False,Nature Portfolio,2662-1355
-1,Nature Sustainability,Springer Nature,journal,True,False,Nature Portfolio,2398-9629
-1,New Journal of Chemistry,RSC,journal,True,False,Royal Society of Chemistry,1144-0546
-1,Next Nanotechnology,Elsevier,journal,True,True,Elsevier BV,2949-8295
-1,Next Sustainability,Elsevier,journal,True,True,Elsevier BV,2949-8236
-1,Nuclear Instruments and Methods in Physics Research Section B Beam Interactions with Materials and Atoms,Elsevier,journal,True,False,Elsevier BV,0168-583X
-1,Pest Management Science,Wiley,journal,True,False,Wiley,1526-498X
-1,Phytomedicine Plus,Elsevier,journal,True,True,Elsevier BV,2667-0313
-1,Plant Stress,Elsevier,journal,True,True,Elsevier BV,2667-064X
-1,PLoS ONE,PLoS,journal,True,True,Public Library of Science,1932-6203
-1,Polymer Composites,Wiley,journal,True,False,Wiley,0272-8397
-1,Polymer Degradation and Stability,Elsevier,journal,True,False,Elsevier BV,0141-3910
-1,Polymer Engineering and Science,Wiley,journal,True,False,Wiley,0032-3888
-1,Polymer Journal,Springer Nature,journal,True,False,Springer Nature,0032-3896
-1,Polymer Testing,Elsevier,journal,True,True,Elsevier BV,0142-9418
-1,Polymer-Plastics Technology and Materials,Taylor & Francis,journal,True,False,Taylor & Francis,2574-0881
-1,Postharvest Biology and Technology,Elsevier,journal,True,False,Elsevier BV,0925-5214
-1,Procedia Engineering,Elsevier,journal,True,False,Elsevier BV,1877-7058
-1,Process Biochemistry,Elsevier,journal,True,False,Elsevier BV,1359-5113
-1,Processes,MDPI,journal,True,False,Multidisciplinary Digital Publishing Institute,2227-9717
-1,Renewable Energy,Elsevier,journal,True,False,Elsevier BV,0960-1481
-1,Sensors,MDPI,journal,True,True,Multidisciplinary Digital Publishing Institute,1424-8220
-1,Soil Advances,Elsevier,journal,False,True,Elsevier BV,2950-2896
-1,Soil and Tillage Research,Elsevier,journal,True,False,Elsevier BV,0167-1987
-1,Soil Use and Management,Wiley,journal,True,False,Wiley,0266-0032
-1,Solar RRL,Wiley,journal,True,False,Wiley,2367-198X
-1,Southern Forests a Journal of Forest Science,Taylor & Francis,journal,True,False,Taylor & Francis,2070-2620
-1,Surfaces and Interfaces,Elsevier,journal,True,False,Elsevier BV,2468-0230
-1,Sustainable Chemistry for Climate Action,Elsevier,journal,True,True,Elsevier BV,2772-8269
-1,The European Physical Journal Plus,Springer Nature,journal,True,False,Springer Science+Business Media,2190-5444
-1,The Scientific World JOURNAL,Wiley,journal,True,True,Hindawi Publishing Corporation,1537-744X
-1,Transfusion,Wiley,journal,True,False,Wiley,0041-1132
-1,Trees,Springer Nature,journal,True,False,Springer Science+Business Media,0931-1890
-1,Trends in Food Science & Technology,Elsevier,journal,True,False,Elsevier BV,0924-2244
-1,Vacuum,Elsevier,journal,True,False,Elsevier BV,0042-207X
-1,Waste and Biomass Valorization,Springer Nature,journal,True,False,Springer Science+Business Media,1877-2641
-1,Water Air & Soil Pollution,Springer Nature,journal,True,False,Springer Science+Business Media,0049-6979
-1,Water Research,Elsevier,journal,True,False,Elsevier BV,0043-1354
-1,World Journal of Microbiology and Biotechnology,Springer Nature,journal,True,False,Springer Science+Business Media,0959-3993
+publisher,journal,article name,doi
+ACS,ACS Agricultural Science & Technology,Designing Starch–Alginate Hydrogels for Controlled Delivery of Fungicide for the Alleviation of Environmental Pollution,https://doi.org/10.1021/acsagscitech.2c00213
+ACS,ACS Agricultural Science & Technology,Effects of Carboxymethyl Cellulose/Nano-Calcium Carbonate Hydrogel Amendment of Loamy Sand Soil for Maize Growth,https://doi.org/10.1021/acsagscitech.2c00185
+ACS,ACS Agricultural Science & Technology,Enhancement of Cashew (Anacardium occidentale L.) Seedlings Growth in Semiarid Regions Using a Superabsorbent Hydrogel Composite,https://doi.org/10.1021/acsagscitech.4c00226
+ACS,ACS Agricultural Science & Technology,Renewable Source Hydrogel as a Substrate of Controlled Release of NPK Fertilizers for Sustainable Management of Eucalyptus urograndis: Field Study,https://doi.org/10.1021/acsagscitech.2c00215
+ACS,ACS Agricultural Science & Technology,Synthesis of Nanocomposite Hydrogels for Improved Water Retention in Horticultural Soil,https://doi.org/10.1021/acsagscitech.2c00187
+ACS,ACS Applied Bio Materials,Engineering Rapeseed Germination and Root Growth with Mechanical Strength of Polysaccharide Hydrogel,https://doi.org/10.1021/acsabm.4c00416
+ACS,ACS Applied Materials & Interfaces,Development of Eco-Friendly Hydrogels Loaded with Stoichiometric and Calcium-Deficient Hydroxyapatites for Sustainable Agriculture,https://doi.org/10.1021/acsami.6c03612
+ACS,ACS Applied Polymer Materials,Biodegradable CMC/ZnO/Ni Cross-Linked Hydrogel Beads for Enhanced Plant Growth and Increased Soil Urease Activity,https://doi.org/10.1021/acsapm.4c02498
+ACS,ACS Applied Polymer Materials,Enhancing Plant Growth of Vigna radiata Using Biodegradable Superabsorbent Carboxymethylcellulose Nanohydrogel Enriched with Carbon Dots under Water-Stressed Conditions,https://doi.org/10.1021/acsapm.4c00241
+ACS,ACS Applied Polymer Materials,Preparation of Cellulose Hydrogels and Hydrogel Nanocomposites Reinforced by Crystalline Cellulose Nanofibers (CNFs) as a Water Reservoir for Agriculture Use,https://doi.org/10.1021/acsapm.3c00109
+ACS,ACS Applied Polymer Materials,Seed Coatings with Melatonin-Embedded Hydrogel Biopolymers as Green Tools to Mitigate Salinity Stress in Tomato Plants,https://doi.org/10.1021/acsapm.5c01261
+ACS,ACS Materials Letters,Dual Functional Biodegradable Carboxymethylcellulose–Zinc–Cobalt Cross-Linked Hydrogel Beads with Inherent Biocidal Property for Multinutrient Fertilization: An Experimental Study with Theoretical Insights,https://doi.org/10.1021/acsmaterialslett.5c01599
+ACS,ACS Materials Letters,"Eco-Friendly Chitosan Carboxymethyl Cellulose Composite for Enhanced Delivery of Nitrogen, Phosphorus, and Potassium in Sustainable Agricultural Systems",https://doi.org/10.1021/acsmaterialslett.6c00100
+ACS,ACS Omega,Environmentally Friendly Carboxymethyl Cellulose Hydrogels Derived from Waste Paper and Sawdust as a Urea Release Agent,https://doi.org/10.1021/acsomega.4c09928
+ACS,ACS Omega,Novel Polysaccharide Hydrogels Enriched with Humic Acid for Sustainable Agricultural Applications,https://doi.org/10.1021/acsomega.5c09496
+ACS,ACS Omega,Physically and Chemically Cross-Linked Poly(vinyl alcohol)/Humic Acid Hydrogels for Agricultural Applications,https://doi.org/10.1021/acsomega.3c05868
+ACS,ACS Omega,Rapid Accessible Fabrication and Engineering of Bilayered Hydrogels: Revisiting the Cross-Linking Effect on Superabsorbent Poly(acrylic acid),https://doi.org/10.1021/acsomega.8b00079
+ACS,ACS Omega,Synthesis of a Dual-Functional Nanofertilizer by Embedding ZnO and CuO Nanoparticles on an Alginate-Based Hydrogel,https://doi.org/10.1021/acsomega.1c03271
+ACS,ACS Sustainable Chemistry & Engineering,Germination-Inspired Enzymatic Degradation of Guar Galactomannan and Its Synergistic Skincare Effects with Aloe Polysaccharides,https://doi.org/10.1021/acssuschemeng.5c08222
+ACS,ACS Sustainable Chemistry & Engineering,Super Hygroscopic Sodium Alginate/Cellulose-Based Hydrogel Beads for Atmospheric Water Harvesting and Slope Soil Phytoremediation,https://doi.org/10.1021/acssuschemeng.5c02351
+ACS,ACS Sustainable Chemistry & Engineering,Thermochromic Janus Membranes with Dynamic Solar Modulation toward Sustainable and High-Efficiency Solar-to-Thermal Intelligent Management,https://doi.org/10.1021/acssuschemeng.4c01003
+ACS,Biomacromolecules,Dual Antifreeze and Sustained Release Cellulose Nanocrystal-Humic Acid Nanocomposite Hydrogel for Soilless Cultivation,https://doi.org/10.1021/acs.biomac.5c02444
+ACS,Chem & Bio Engineering,Polymer Network Architecture of Single Network and Semi-Interpenetrating Network Hydrogels Modulates Water Retention and Degradation in Soil Conditioning Applications,https://doi.org/10.1021/cbe.5c00029
+ACS,Journal of Agricultural and Food Chemistry,Cellulose Anionic Hydrogels Based on Cellulose Nanofibers As Natural Stimulants for Seed Germination and Seedling Growth,https://doi.org/10.1021/acs.jafc.6b05815
+ACS,Journal of Agricultural and Food Chemistry,"Dual-Action Pesticide Carrier That Continuously Induces Plant Resistance, Enhances Plant Anti-Tobacco Mosaic Virus Activity, and Promotes Plant Growth",https://doi.org/10.1021/acs.jafc.9b03484
+ACS,Journal of Agricultural and Food Chemistry,Innovative Dual-Network Architecture of Carboxymethyl Cellulose-Gelatin/MIL-101(Fe) Carrier: A Vital Step toward Precision Trifluralin Delivery and Sustainable Crop Protection,https://doi.org/10.1021/acs.jafc.5c09015
+ACS,Langmuir,Agro-Waste Valorization into Carbonaceous Eco-Hydrogel: A Circular Economy and Zero Waste Tactic for Doxorubicin Removal in Water/Wastewater,https://doi.org/10.1021/acs.langmuir.3c02256
+ACS,Langmuir,Intelligent Microsphere Soil Conditioner Based on Aminated Lignosulfonate and Thermoresponsive Polymer,https://doi.org/10.1021/acs.langmuir.5c04647
+Elsevier,Agriculture and Agricultural Science Procedia,Biodegradable Superabsorbent Hydrogel IncreasesWater Retention Properties of Growing Media and Plant Growth,https://doi.org/10.1016/j.aaspro.2015.03.052
+Elsevier,Biomass and Bioenergy,Synthesis of a calcium alginate hydrogel-modified phosphorus-enriched Douglas fir biochar controlled-release fertilizer,https://doi.org/10.1016/j.biombioe.2026.109564
+Elsevier,Biotechnology Reports,Formulating bacterial endophyte: Pre-conditioning of cells and the encapsulation in amidated pectin beads,https://doi.org/10.1016/j.btre.2020.e00463
+Elsevier,Carbohydrate Polymer Technologies and Applications,"Development of polyvinyl alcohol, carboxymethyl cellulose, humic acid ternary polymer-based hydrogel fertilizer to enhance cabbage growth, yield, and nutritional quality",https://doi.org/10.1016/j.carpta.2026.101111
+Elsevier,Carbohydrate Polymer Technologies and Applications,"Enhancement of the physiological activity, yield and antioxidant content of tomato using slow-release urea fertilizer based on PVA/PE/HA/CA hydrogel",https://doi.org/10.1016/j.carpta.2026.101178
+Elsevier,Case Studies in Chemical and Environmental Engineering,Double-xerogel network composite zeolite granules targeting dual-functional fertilizers,https://doi.org/10.1016/j.cscee.2025.101253
+Elsevier,Case Studies in Chemical and Environmental Engineering,Effects of sodium alginate-poly(acrylic acid) cross-linked hydrogel beads on soil conditioner in the absence and presence of phosphate and carbonate ions,https://doi.org/10.1016/j.cscee.2024.100642
+Elsevier,Electronic Journal of Biotechnology,Metal hyperaccumulation in plants - Biodiversity prospecting for phytoremediation technology,https://doi.org/10.2225/vol6-issue3-fulltext-6
+Elsevier,Giant,"Hydrogel Nanocomposite Based Slow-Release Urea Fertilizer: Formulation, Structure, and Release Behavior",https://doi.org/10.1016/j.giant.2024.100270
+Elsevier,Industrial Crops and Products,"A biochar-based coated urea for enhanced nitrogen utilization in wheat farming: Field performance, soil microbial response and life cycle assessment",https://doi.org/10.1016/j.indcrop.2026.123143
+Elsevier,Industrial Crops and Products,Enhancing beneficial microbe viability and tobacco black shank disease control via sodium alginate–polyethylene glycol–glycerol hydrogel seed coating,https://doi.org/10.1016/j.indcrop.2025.122308
+Elsevier,Industrial Crops and Products,Multifunctional cysteine-rich hyaluronic acid-based hydrogel for efficient Cd²⁺ and Cu²⁺ removal and sorghum growth promotion via synergistic mechanisms,https://doi.org/10.1016/j.indcrop.2026.122975
+Elsevier,Industrial Crops and Products,"Synthesis and characterization of κ-carrageenan and guar gum-based hydrogels for controlled release fertilizers: Optimization, release kinetics, and agricultural impact",https://doi.org/10.1016/j.indcrop.2025.120587
+Elsevier,Industrial Crops and Products,The effects of two new types of composite hydrogels on soil properties and tobacco growth,https://doi.org/10.1016/j.indcrop.2026.123612
+Elsevier,International Journal of Biological Macromolecules,Eco-friendly alginate-urea-fluroxypyr hydrogel for sustainable agriculture: A comprehensive approach to integrated fertilizer delivery and weed control,https://doi.org/10.1016/j.ijbiomac.2025.143257
+Elsevier,International Journal of Biological Macromolecules,Sustainable hybrid alginate-based hydrogels for dual controlled release of micronutrients and plant growth-promoting bacteria in soil,https://doi.org/10.1016/j.ijbiomac.2026.151216
+Elsevier,Journal of Agriculture and Food Research,Advances and technological applications of alginate hydrogels and derived formulations in agriculture: A review,https://doi.org/10.1016/j.jafr.2026.103029
+Elsevier,Journal of Agriculture and Food Research,Agronomic evaluation of hydrogels containing antimicrobial agents applied on Lactuca sativa L. seeds and plantlets,https://doi.org/10.1016/j.jafr.2025.102496
+Elsevier,Journal of Agriculture and Food Research,"Biochar-phytagel hydrogel enhances growth, nutrient uptake, and drought resilience of lettuce microgreens",https://doi.org/10.1016/j.jafr.2025.102573
+Elsevier,Journal of Bioresources and Bioproducts,Hydrochar-embedded carboxymethyl cellulose-g-poly(acrylic acid) hydrogel as stable soil water retention and nutrient release agent for plant growth,https://doi.org/10.1016/j.jobab.2022.03.003
+Elsevier,Journal of environmental chemical engineering,Chitosan-alginate hybrid hydrogels: Prospects for sustainable horticulture,https://doi.org/10.1016/j.jece.2026.122491
+Elsevier,Journal of environmental chemical engineering,Enhancing soil water retention and plant growth with thermal crosslinked silk sericin-based hydrogel,https://doi.org/10.1016/j.jece.2024.112260
+Elsevier,Journal of environmental chemical engineering,Phosphate recovery from wastewater by cellulose-based adsorbent derived from agricultural waste and its reuse as a slow-release fertilizer,https://doi.org/10.1016/j.jece.2025.116716
+Elsevier,Journal of Industrial and Engineering Chemistry,Silk sericin-based emulsion gel as a novel coating material for controlled-release NPK fertilizer,https://doi.org/10.1016/j.jiec.2025.10.020
+Elsevier,Next Materials,"Active nanocomposite film for sustainable packaging: A study on sodium alginate, polyvinyl alcohol, honey, and zinc oxide nanoparticles",https://doi.org/10.1016/j.nxmate.2025.101216
+Elsevier,Next Sustainability,Bacterial alginate composite hydrogels for enhanced water retention and drought stress mitigation in Trigonella foenum-graecum,https://doi.org/10.1016/j.nxsust.2026.100331
+Elsevier,Phytomedicine Plus,Anti-MRSA potential of biogenic silver nanoparticles synthesized from hydroponically grown Foeniculum vulgare,https://doi.org/10.1016/j.phyplu.2023.100415
+Elsevier,Procedia Engineering,Effect of Different Monomers on Water Retention Properties of Slow Release Fertilizer Hydrogel,https://doi.org/10.1016/j.proeng.2016.06.573
+Elsevier,Sustainable Chemistry for Climate Action,Inducing surface secondary gradient cross-linking coupled with doping starch carbamate derivatives for improving the property of the acrylamide hydrogel-based slow-release fertilizer,https://doi.org/10.1016/j.scca.2026.100224
+Elsevier,Water Research,"Phosphate removal, recovery, and upcycling by wollastonite and calcium phosphate mineral–hydrogel composites",https://doi.org/10.1016/j.watres.2026.126006
+Frontiers,Frontiers in Environmental Science,"Phosphorous remediation using alginate/glomalin biobeads: Examining structural cohesivity, nutrient retention, and reapplication viability",https://doi.org/10.3389/fenvs.2022.889940
+MDPI,Agriculture,Influence of Biochar-Reinforced Hydrogel Composites on Growth and Biochemical Parameters of Bean Plants and Soil Microbial Activities under Different Moisture Conditions,https://doi.org/10.3390/agriculture14081405
+MDPI,Agriculture,Synthetic Hydrogel Dilutes Serratia plymuthica Growth— Promoting Effect on Brassica napus L. Under Drought Conditions,https://doi.org/10.3390/agriculture15020142
+MDPI,Agronomy,Chitosan-PVA and Copper Nanoparticles Improve Growth and Overexpress the SOD and JA Genes in Tomato Plants under Salt Stress,https://doi.org/10.3390/agronomy8090175
+MDPI,Biomolecules,Development of Biodegradable Agar-Agar/Gelatin-Based Superabsorbent Hydrogel as an Efficient Moisture-Retaining Agent,https://doi.org/10.3390/biom10060939
+MDPI,Fibers,Aloe vera Rind Valorization to Improve the Swelling Capacity of Commercial Acrylic Hydrogels,https://doi.org/10.3390/fib10090073
+MDPI,Gels,A Bio-Based Composite Hydrogel Substrate for Indoor Soilless Dandelion Cultivation: Growth Performance and Polysaccharide Accumulation,https://doi.org/10.3390/gels12030235
+MDPI,Gels,Advances in the Application of Nanocomposite Hydrogels in Crops,https://doi.org/10.3390/gels11120957
+MDPI,Gels,Agriculture 4.0: Polymer Hydrogels as Delivery Agents of Active Ingredients,https://doi.org/10.3390/gels10060368
+MDPI,Gels,Alginate Hydrogel with Pluronic F-68 Enhances Cryopreservation Efficiency in Peach Germplasm,https://doi.org/10.3390/gels11120947
+MDPI,Gels,"CNF/p(AM-co-KAA) Semi-Interpenetrating Network Hydrogel Fertilizer Carriers for Enhanced Nutrient Use Efficiency, Water Retention, and Salt–Alkali Resistance",https://doi.org/10.3390/gels12020157
+MDPI,Gels,Enhancing Soil Resilience: Bacterial Alginate Hydrogel vs. Algal Alginate in Mitigating Agricultural Challenges,https://doi.org/10.3390/gels9120988
+MDPI,Gels,Gelatin–Chitosan–PVA Hydrogels Incorporating Trichoderma and Their Application in the Control of Phytopathogens,https://doi.org/10.3390/gels12020144
+MDPI,Gels,Growth of Romaine Lettuce in Eggshell Powder Mixed Alginate Hydrogel in an Aeroponic System for Water Conservation and Vitamin C Biofortification,https://doi.org/10.3390/gels10050322
+MDPI,Gels,"Hydrogel Development, Processing and Applications in Agriculture: A Review",https://doi.org/10.3390/gels12030259
+MDPI,Gels,Impact of Water Conductivity on the Structure and Swelling Dynamics of E-Beam Cross-Linked Hydrogels,https://doi.org/10.3390/gels11080611
+MDPI,Gels,"Macroalgal-Derived Alginate Soil Amendments for Water Retention, Nutrient Release Rate Reduction, and Soil pH Control",https://doi.org/10.3390/gels8090548
+MDPI,Gels,Nano-Iron (III) Oxide-Doped Poly (Itaconic Acid-Co-Acrylamide)/Sodium Alginate Hydrogel for Saline–Alkali Soil Amelioration and Wheat Growth,https://doi.org/10.3390/gels12060558
+MDPI,Gels,Polymer Gel Substrate: Synthesis and Application in the Intensive Light Artificial Culture of Agricultural Plants,https://doi.org/10.3390/gels9120937
+MDPI,Gels,Sustainable Date Palm Biomass Hydrogel Improves Soil Hydro-Physical Properties and Tomato Growth Under Arid Conditions,https://doi.org/10.3390/gels12020183
+MDPI,Horticulturae,"Multilayer Silk Sericin-Based Coating for Controlled Release of Water and Nutrients in Soil: Development, Characterization, and Performance Evaluation in Agricultural Production Model",https://doi.org/10.3390/horticulturae10030273
+MDPI,International Journal of Molecular Sciences,"High-Strength, High-Water-Retention Hemicellulose-Based Hydrogel and Its Application in Urea Slow Release",https://doi.org/10.3390/ijms24119208
+MDPI,International Journal of Molecular Sciences,Sodium Alginate-g-acrylamide/acrylic Acid Hydrogels Obtained by Electron Beam Irradiation for Soil Conditioning,https://doi.org/10.3390/ijms24010104
+MDPI,International Journal of Molecular Sciences,"Sulfonic Cryogels as Innovative Materials for Biotechnological Applications: Synthesis, Modification, and Biological Activity",https://doi.org/10.3390/ijms24032949
+MDPI,Marine Drugs,Improvement of Alginate Extraction from Brown Seaweed (Laminaria digitata L.) and Valorization of Its Remaining Ethanolic Fraction,https://doi.org/10.3390/md22060280
+MDPI,Materials,Chitosan-Coated Alginate Matrices with Protein-Based Biostimulants: A Controlled-Release System for Sustainable Agriculture,https://doi.org/10.3390/ma18030591
+MDPI,Molecules,Implementation of Biopolymeric Nanomaterials to Reduce the Negative Impacts of Salinity on Tomato Quantity and Quality,https://doi.org/10.3390/molecules28041594
+MDPI,Molecules,Super-Transparent Soil for In Situ Observation of Root Phenotypes,https://doi.org/10.3390/molecules29112677
+MDPI,Molecules,Use of Chitosan-PVA Hydrogels with Copper Nanoparticles to Improve the Growth of Grafted Watermelon,https://doi.org/10.3390/molecules22071031
+MDPI,Nanomaterials,Novel Polyvinyl Alcohol (PVA)/Cellulose Nanocrystal (CNC) Supramolecular Composite Hydrogels: Preparation and Application as Soil Conditioners,https://doi.org/10.3390/nano9101397
+MDPI,Polymers,Application of Gellan Hydrogel and Kaz-6 in Wheat Seed Coating for Improved Productivity and Environmental Resilience,https://doi.org/10.3390/polym17101330
+MDPI,Polymers,Biopolymer Hydrogel Based on Acid Whey and Cellulose Derivatives for Enhancement Water Retention Capacity of Soil and Slow Release of Fertilizers,https://doi.org/10.3390/polym13193274
+MDPI,Polymers,Hydrogel Alginate Seed Coating as an Innovative Method for Delivering Nutrients at the Early Stages of Plant Growth,https://doi.org/10.3390/polym13234233
+MDPI,Polymers,Low Hysteresis and Fatigue-Resistant Polyvinyl Alcohol/Activated Charcoal Hydrogel Strain Sensor for Long-Term Stable Plant Growth Monitoring,https://doi.org/10.3390/polym15010090
+MDPI,Polymers,Room-Temperature Synthesis of Pullulan-Based Hydrogels for Controlled Delivery of Microbial Fertilizers,https://doi.org/10.3390/polym17243323
+MDPI,Polymers,Study on Nutrient Carrier of Mulch Based on Hydrogel @SiO2,https://doi.org/10.3390/polym16101442
+MDPI,Polymers,Swelling Behaviour of Superabsorbent Polymers for Soil Amendment under Different Loads,https://doi.org/10.3390/polym10030271
+MDPI,Sensors,"A Highly Sensitive, Low Creep Hydrogel Sensor for Plant Growth Monitoring",https://doi.org/10.3390/s24196197
+MDPI,Sustainability,"Cashew Gum (Anacardium occidentale) Hydrogel for Sustainable Irrigation of Cactus Pear: Effects on Growth, Chemical Composition, and Mineral Content",https://doi.org/10.3390/su17020501
+MDPI,Water,Innovative Solutions for Drought: Evaluating Hydrogel Application on Onion Cultivation (Allium cepa) in Morocco,https://doi.org/10.3390/w15111972
+PLoS,PLoS ONE,“On-Off” Thermoresponsive Coating Agent Containing Salicylic Acid Applied to Maize Seeds for Chilling Tolerance,https://doi.org/10.1371/journal.pone.0120695
+RSC,Chemical Communications,Controlled release of agrochemicals and heavy metal ion capture dual-functional redox-responsive hydrogel for soil remediation,https://doi.org/10.1039/c8cc07872f
+RSC,Molecular Omics,Unraveling the phenotypic and metabolic responses induced by urea-encapsulated hydrogel beads on Brassica juncea (L.) Czern & Coss,https://doi.org/10.1039/d4mo00192c
+RSC,RSC Advances,DOE-based synthesis of gellan gum-acrylic acid-based biodegradable hydrogels: screening of significant process variables and in situ field studies,https://doi.org/10.1039/d1ra08786j
+RSC,RSC Advances,Nanocellulose/wood ash-reinforced starch–chitosan hydrogel composites for soil conditioning and their impact on pea plant growth,https://doi.org/10.1039/d3ra08725e
+RSC,RSC Advances,Response surface methodology and optimized synthesis of guar gum-based hydrogels with enhanced swelling capacity,https://doi.org/10.1039/c4ra05300a
+Springer Nature,Advanced Composites and Hybrid Materials,Multipurpose biosensing electronics enabled by ultrasoft and durable hydrogel via ions pre-incorporation,https://doi.org/10.1007/s42114-025-01422-x
+Springer Nature,Advances in Traditional Medicine,Phyto-synthesis and pharmacological evaluation of AgNPs using hydroponic coriander for MRSA infected wounds,https://doi.org/10.1007/s13596-026-00906-5
+Springer Nature,Biomass Conversion and Biorefinery,Innovative uses of biochar derived from tannery waste as a soil amendment and fertilizer,https://doi.org/10.1007/s13399-022-02805-6
+Springer Nature,Bulletin of Materials Science,Laponite® clay/poly(ethylene oxide) gel beads for delivery of plant growth-promoting rhizobacteria,https://doi.org/10.1007/s12034-021-02383-9
+Springer Nature,Cellulose,Cellulose nanocrystal-graft-polyacrylic acid /polyvinyl alcohol hydrogels: physicochemical properties and swelling behavior,https://doi.org/10.1007/s10570-024-05968-9
+Springer Nature,Cellulose,Tapioca/sago carboxymethyl starch-based hybrid hydrogel reinforced by oil palm residue-derived carboxymethyl cellulose,https://doi.org/10.1007/s10570-026-07077-1
+Springer Nature,Chemical Papers,Permeation and diffusion of nutrient ions in poly (vinyl alcohol) hydrogel membrane,https://doi.org/10.1007/s11696-020-01210-5
+Springer Nature,Chemical Papers,Synthesis of rice straw biopolymers based hydrogels and their use as media for growth of monocot (wheat) and dicot (moong bean) plants,https://doi.org/10.1007/s11696-022-02644-9
+Springer Nature,Emergent Materials,Release characteristic of curcumin (Zingiberaceae) from sodium alginate and polyvinyl alcohol-based hydrogel composite: antioxidant properties,https://doi.org/10.1007/s42247-022-00433-4
+Springer Nature,Environmental Chemistry Letters,Applications of nanocomposite hydrogels for biomedical engineering and environmental protection,https://doi.org/10.1007/s10311-017-0671-x
+Springer Nature,International Journal of Plastics Technology,"Synthesis, optimization, characterization and agricultural field evaluation of polymer hydrogel composites based on poly acrylic acid and micro-fiber of oil palm empty fruit bunch",https://doi.org/10.1007/s12588-012-9040-6
+Springer Nature,Journal of Materials Science,Autoclave assisted synthesis of slow-release fertilizer from polymerized chemical grafted nanocellulose fiber,https://doi.org/10.1007/s10853-026-12465-w
+Springer Nature,Journal of Materials Science,Formulation and characterization of polysaccharide beads for controlled release of plant growth regulators,https://doi.org/10.1007/s10853-016-9775-0
+Springer Nature,Journal of Polymer Research,Study of the process of polymerization of epichlorohydrin with amino compounds,https://doi.org/10.1007/s10965-025-04669-6
+Springer Nature,Journal of Polymer Research,"Synthesis, swelling and morphological properties of tea waste-based hydrogel as a slow-release NPK fertilizer applied to eggplant seed germination and growth",https://doi.org/10.1007/s10965-025-04720-6
+Springer Nature,Journal of Polymers and the Environment,Adsorption of Ammonium by Graphene Oxide-Based Composites Prepared by UV Irradiation and Using as Slow-Release Fertilizer,https://doi.org/10.1007/s10924-018-1302-8
+Springer Nature,Journal of Polymers and the Environment,All-Biomass Double Network Gel: Highly Efficient Removal of Pb2+ and Cd2+ in Wastewater and Utilization of Spent Adsorbents,https://doi.org/10.1007/s10924-020-01806-8
+Springer Nature,Journal of Polymers and the Environment,Bentonite-Polymer Seed Encapsulants with Microparticles for Agricultural and Reforestation Using UAVs,https://doi.org/10.1007/s10924-025-03605-5
+Springer Nature,Journal of Polymers and the Environment,Encapsulation of Plant Growth-Promoting Bacteria with Gum Arabic Hydrogels: A Potential System for Sustainable Agriculture,https://doi.org/10.1007/s10924-024-03339-w
+Springer Nature,Journal of Polymers and the Environment,Improving Impact of Poly(Starch/Acrylic Acid) Superabsorbent Hydrogel on Growth and Biochemical Traits of Sunflower Under Drought Stress,https://doi.org/10.1007/s10924-021-02322-z
+Springer Nature,Journal of Polymers and the Environment,Superabsorbent Hydrogel Composite Based on Starch/Rice Husk Ash as a Soil Conditioner in Melon (Cucumis melo L.) Seedling Culture,https://doi.org/10.1007/s10924-019-01593-x
+Springer Nature,Journal of Polymers and the Environment,"Superabsorbent Polymer with Excellent Water/Salt Absorbency and Water Retention, and Fast Swelling Properties for Preventing Soil Water Evaporation",https://doi.org/10.1007/s10924-022-02543-w
+Springer Nature,Journal of Polymers and the Environment,"Value Addition to Agro-Industrial Waste Through Pectin Extraction: Chemometric Categorization, Density Functional Theory Analysis, Rheology Investigation, Optimization Using Response Surface Methodology and Prospective Applications Through Hydrogel Preparation",https://doi.org/10.1007/s10924-023-03103-6
+Springer Nature,Journal of soil science and plant nutrition,"Effects of Superabsorbent Hydrogel on Soil Porosity, Bulk Density, and Water Productivity of Tomato Grown Under Drought Stress in Clay Loam and Sandy Loam Soils",https://doi.org/10.1007/s42729-025-02542-5
+Springer Nature,Nature Communications,Rhizobacteria protective hydrogel to promote plant growth and adaption to acidic soil,https://doi.org/10.1038/s41467-025-56988-3
+Springer Nature,Plant and Soil,Hydrogel capsules as carriers for PGPB consortia enhance compost efficacy and nutrient uptake in Oat (Avena sativa) fertilization,https://doi.org/10.1007/s11104-025-07454-y
+Springer Nature,Plant and Soil,"Surface tension, rheology and hydrophobicity of rhizodeposits and seed mucilage influence soil water retention and hysteresis",https://doi.org/10.1007/s11104-019-03939-9
+Springer Nature,Polymer Bulletin,Evaluation of the effects of a slow-release urea-incorporated fertilizer derived from PVA/HA/CA hydrogel on the growth of maize plants,https://doi.org/10.1007/s00289-026-06398-2
+Springer Nature,Polymer Bulletin,Preparation of pH/temperature-responsive semi-IPN hydrogels based on sodium alginate and humic acid as slow-release and water-retention fertilizers,https://doi.org/10.1007/s00289-023-04901-7
+Springer Nature,Polymer Bulletin,Starch/polyvinyl alcohol/encapsulated zeolite superabsorbent nanocomposite for urea slow-release fertilizer,https://doi.org/10.1007/s00289-026-06529-9
+Springer Nature,Polymer Bulletin,Synthesis and application of zinc-loaded carboxymethyl tamarind kernel gum and xanthan gum-based superabsorbent hydrogels to investigate the effect on sesame plant growth,https://doi.org/10.1007/s00289-024-05150-y
+Springer Nature,Polymer Bulletin,Synthesis and characterization of agarose-bacterial cellulose hydrogel for promoting seed germination by improving soil water retention,https://doi.org/10.1007/s00289-023-05102-y
+Springer Nature,Polymer Bulletin,"Synthesis, characterization, and fertilizer release study of the salt and pH-sensitive NaAlg-g-poly(AA-co-AAm)/RHA superabsorbent nanocomposite",https://doi.org/10.1007/s00289-016-1899-5
+Springer Nature,Scientific Reports,A novel biochar-based composite hydrogel for removing heavy metals in water and alleviating cadmium stress in tobacco seedlings,https://doi.org/10.1038/s41598-023-41946-0
+Springer Nature,Scientific Reports,Biopolymer-based hydrogel formulations for improved seed coating performance,https://doi.org/10.1038/s41598-025-30594-1
+Springer Nature,Scientific Reports,Cellulose based hydrogel as soil conditioner and seed germination medium,https://doi.org/10.1038/s41598-025-05920-2
+Springer Nature,Scientific Reports,Copolymers enhance selective bacterial community colonization for potential root zone applications,https://doi.org/10.1038/s41598-017-16253-0
+Springer Nature,Scientific Reports,Design and manufacturing of superabsorbent polymers (SAPs) for agriculture in arid areas,https://doi.org/10.1038/s41598-025-99666-6
+Springer Nature,Scientific Reports,Development of biodegradable hydrogels with adjustable moisture retention capacity for agricultural applications,https://doi.org/10.1038/s41598-026-44948-w
+Springer Nature,Scientific Reports,"Improvement of tomato yield and quality using slow release NPK fertilizers prepared by carnauba wax emulsion, starch-based latex and hydrogel nanocomposite combination",https://doi.org/10.1038/s41598-023-38445-7
+Springer Nature,Scientific Reports,Synthesis and application of a multifunctional poly (vinyl pyrrolidone)-based superabsorbent hydrogel for controlled fertilizer release and enhanced water retention in drought-stressed Pisum sativum plants,https://doi.org/10.1038/s41598-024-76255-7
+Springer Nature,World Journal of Microbiology and Biotechnology,Biodegradation of diclofenac and paracetamol using immobilized laccase on novel polyacrylamide alginate gel chips and chitosan beads for mitigation of micropollutants in hospital effluent,https://doi.org/10.1007/s11274-026-04815-2
+Taylor & Francis,Communications in Soil Science and Plant Analysis,"Effects of PGPR Bioinoculants, Hydrogel and Biochar on Growth and Physiology of Soybean under Drought Stress",https://doi.org/10.1080/00103624.2022.2028818
+Taylor & Francis,Communications in Soil Science and Plant Analysis,Hydrogel Effects on Soil Nitrogen Transformations in pH-Contrasting Soils,https://doi.org/10.1080/00103624.2024.2378973
+Taylor & Francis,Compost Science & Utilization,Use of Sieved Compost Plus Hydrogel for Solid Matrix Priming of Carrot Seeds,https://doi.org/10.1080/1065657x.2012.10737015
+Taylor & Francis,Environmental Technology,Adsorption of ammonium and phosphate by feather protein based semi-interpenetrating polymer networks hydrogel as a controlled-release fertilizer,https://doi.org/10.1080/09593330.2013.831461
+Taylor & Francis,Frontiers in Life Science,“Intelligent” seed pellets may improve chilling tolerance in tobacco,https://doi.org/10.1080/21553769.2013.783511
+Taylor & Francis,Natural Product Research,Synthesis of xylan and lignin based hydrogels and their use as growth media for rice ( Oryza sativa ),https://doi.org/10.1080/14786419.2024.2324463
+Wiley,Advanced Functional Materials,Alginate‐Sludge Derived Biochar‐Calcium Hydrogel for Phosphate Removal and Slow‐Release Fertilizer: A Sustainable and Multifunctional Solution,https://doi.org/10.1002/adfm.202510234
+Wiley,Advanced Functional Materials,Ambient‐Dried MOF/Cellulose‐Based Aerogels for Atmospheric Water Harvesting and Sustainable Water Management in Agriculture,https://doi.org/10.1002/adfm.202506427
+Wiley,Advances in Polymer Technology,Gamma Irradiation Synthesis of Carboxymethyl Cellulose/Acrylic Acid/Clay Superabsorbent Hydrogel,https://doi.org/10.1002/adv.21690
+Wiley,Agronomy Journal,Germination and Emergence of Russian Wildrye Seeds Coated with Hydrophilic Materials1,https://doi.org/10.2134/agronj1980.00021962007200060033x
+Wiley,Agronomy Journal,Impact of guar gum‐based hydrogel on yield and economics for sugarcane crops,https://doi.org/10.1002/agj2.21400
+Wiley,ChemistrySelect,Activated Carbon Regulated Polyvinyl Alcohol Hydrogel for Soilless Culture,https://doi.org/10.1002/slct.202507212
+Wiley,ChemistrySelect,Humic Acid‐Functionalized Hydrogels: A Dual Platform for Controlled Release of Dinotefuran and Enhanced Water Retention,https://doi.org/10.1002/slct.202505903
+Wiley,ChemistrySelect,"Novel Synthesis, and Application of Carboxymethylated Cassia fistula ‐Based Hydrogel for Extended‐Release of Dinotefuran",https://doi.org/10.1002/slct.202403421
+Wiley,CLEAN - Soil Air Water,Amending Soils with Hydrogels Increases the Biomass of Nine Tree Species under Non‐water Stress Conditions,https://doi.org/10.1002/clen.200900128
+Wiley,CLEAN - Soil Air Water,Effects of Hydrogel Amendment to Different Soils on Plant Available Water and Survival of Trees under Drought Conditions,https://doi.org/10.1002/clen.200900245
+Wiley,Journal of Agronomy and Crop Science,What Is the Impact of Soil Amendment With Biochar‐Filled Hydrogel on the Molecular Characteristics of Wheat ( Triticum aestivum ) Seedlings in Drought Stress Conditions?,https://doi.org/10.1111/jac.70207
+Wiley,Journal of Applied Polymer Science,Characterization and possible agricultural application of polyacrylamide/sodium alginate crosslinked hydrogels prepared by ionizing radiation,https://doi.org/10.1002/app.22487
+Wiley,Journal of Applied Polymer Science,"Eco‐friendly superabsorbent hydrogels based on starch, gellan gum, citric acid, and nanoclays for soil humidity control",https://doi.org/10.1002/app.52998
+Wiley,Journal of Applied Polymer Science,Encapsulation of Rhodopseudomonas palustrisKTSSR54 using beads from alginate/starch blends,https://doi.org/10.1002/app.50084
+Wiley,Journal of Applied Polymer Science,Hydrogels composite of poly(acrylamide‐co‐acrylate) and rice husk ash. I. Synthesis and characterization,https://doi.org/10.1002/app.34528
+Wiley,Journal of Applied Polymer Science,Pectin‐based polymer hydrogel as a carrier for release of agricultural nutrients and removal of heavy metals from wastewater,https://doi.org/10.1002/app.32123
+Wiley,Journal of Applied Polymer Science,Physical properties and ion permeability of crosslinking hydrogel membrane based on poly(vinyl alcohol) for soilless cultivation,https://doi.org/10.1002/app.53311
+Wiley,Journal of Applied Polymer Science,pH‐sensitive crosslinked guar gum‐based superabsorbent hydrogels: Swelling response in simulated environments and water retention behavior in plant growth media,https://doi.org/10.1002/app.41060
+Wiley,Journal of Applied Polymer Science,Radiation synthesis of hydrogels to enhance sandy soils water retention and increase plant performance,https://doi.org/10.1002/app.20571
+Wiley,Journal of Applied Polymer Science,Synthesis of crosslinked superabsorbent carboxymethyl cellulose/acrylamide hydrogels through electron‐beam irradiation,https://doi.org/10.1002/app.25916
+Wiley,Journal of Sustainable Agriculture and Environment,Ecofriendly Plant Based Hydrogels Improve Drought Resilience and Promote Sustainable Crop Productivity in Rice Based Agroecosystems,https://doi.org/10.1002/sae2.70092
+Wiley,Legume Science,"Exopolysaccharide‐Based Microencapsulation of Plant Growth‐Promoting Bacillus Strains Improves Germination, Growth, and Yield of Chilean Common Bean Cultivars",https://doi.org/10.1002/leg3.70083
+Wiley,Macromolecular Symposia,Preparation and Properties of Biodegradable Slow‐Release PAA Superabsorbent Matrixes for Phosphorus Fertilizers,https://doi.org/10.1002/masy.200950534
+Wiley,Modern Agriculture,Hydrogen in Agriculture: A Technological Revolution From Soil to Table,https://doi.org/10.1002/moda.70025
+Wiley,Pest Management Science,Carboxymethyl chitosan hydrogel particles for Pretilachlor delivery: ensuring sustained release and environmental safety in rice weed control,https://doi.org/10.1002/ps.70537
+Wiley,Polymer Composites,Poly(acrylamide‐co‐vinyl alcohol)—Superabsorbent materials reinforced by modified clay,https://doi.org/10.1002/pc.22583
+Wiley,Polymers for Advanced Technologies,Carboxymethyl Cellulose‐Based Composite Hydrogels for Sustainable Agriculture Under Drought Stress,https://doi.org/10.1002/pat.70046
+Wiley,Restoration Ecology,New medicine for soil restoration: biological soil crust capsules facilitate native plant and soil microbe establishment,https://doi.org/10.1111/rec.70365
