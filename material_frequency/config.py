@@ -70,7 +70,9 @@ ROLES = [
         _m("polyacrylic_acid", "polyacrylic acid / polyacrylate",
            ["polyacrylic acid", "poly(acrylic acid)", "carbomer", "sodium polyacrylate",
             "polyacrylate"],
-           [r"polyacrylic", r"poly\(acrylic acid\)", r"acrylate", r"\bpaa\b", r"carbomer"]),
+           # (?<!meth): count acrylate / acrylic acid but NOT methacrylate / methacrylic acid
+           [r"polyacrylic", r"(?<!meth)acrylic[\s-]?acid", r"(?<!meth)acrylate",
+            r"\bpaa\b", r"carbomer"]),
         _m("carboxymethyl_starch", "carboxymethyl starch", ["carboxymethyl starch"],
            [r"carboxymethyl starch", r"\bcms\b"]),
         _m("carboxymethyl_chitosan", "carboxymethyl chitosan",
@@ -106,9 +108,9 @@ ROLES = [
         _m("bacterial_cellulose", "bacterial cellulose",
            ["bacterial cellulose", "bacterial nanocellulose"], [r"bacterial (nano)?cellulose"]),
         _m("hec", "hydroxyethyl cellulose", ["hydroxyethyl cellulose"],
-           [r"hydroxyethyl cellulose", r"\bhec\b"]),
+           [r"hydroxyethyl[\s-]?cellulose", r"\bhec\b"]),
         _m("hpc", "hydroxypropyl cellulose", ["hydroxypropyl cellulose"],
-           [r"hydroxypropyl cellulose", r"\bhpc\b"]),
+           [r"hydroxypropyl[\s-]?cellulose", r"\bhpc\b"]),
         _m("guar_gum", "guar gum", ["guar gum", "guar"], [r"\bguar\b"]),
         _m("locust_bean_gum", "locust bean gum", ["locust bean gum", "ceratonia"],
            [r"locust bean gum", r"\blbg\b", r"ceratonia"]),
@@ -128,10 +130,10 @@ ROLES = [
            [r"konjac", r"glucomannan", r"\bkgm\b"]),
         _m("chitosan", "chitosan", ["chitosan"], [r"\bchitosan\b"]),
         _m("methylcellulose", "methylcellulose", ["methylcellulose", "methyl cellulose"],
-           [r"methyl[\s-]?cellulose", r"\bmc\b"]),
+           [r"(?<![a-z])methyl[\s-]?cellulose", r"\bmc\b"]),
         _m("hpmc", "hydroxypropyl methylcellulose",
            ["hydroxypropyl methylcellulose", "hypromellose"],
-           [r"hydroxypropyl methylcellulose", r"hypromellose", r"\bhpmc\b"]),
+           [r"hydroxypropyl[\s-]?methylcellulose", r"hypromellose", r"\bhpmc\b"]),
         _m("carrageenan", "carrageenan",
            ["carrageenan", "kappa-carrageenan", "iota-carrageenan"], [r"carrageenan"]),
         _m("xanthan_gum", "xanthan gum", ["xanthan gum", "xanthan"], [r"\bxanthan"]),
@@ -143,7 +145,8 @@ ROLES = [
     ]),
     ("Context - Incumbents (agronomy status quo, not selected)", [
         _m("polyacrylamide", "polyacrylamide",
-           ["polyacrylamide", "poly(acrylamide)"], [r"polyacrylamide", r"\bpam\b"]),
+           ["polyacrylamide", "poly(acrylamide)"],
+           [r"poly\s?\(?acrylamide", r"\bpam\b", r"\bpaam\b"]),
         _m("superabsorbent", "superabsorbent polymer (SAP)",
            ["superabsorbent polymer", "super absorbent polymer"],
            [r"super\s?absorbent", r"\bsap\b"]),
@@ -157,6 +160,20 @@ MATERIALS = {}
 for _role, _mats in ROLES:
     for _mat in _mats:
         MATERIALS.setdefault(_mat["key"], _mat)
+
+
+# --- Per-(material, DOI) recognition exclusions ----------------------------
+# A regex can match a string that, in one specific paper, denotes a DIFFERENT
+# compound (an abbreviation / substring collision the pattern can't disambiguate
+# without over-blocking legitimate hits elsewhere). Suppress just those (key, doi)
+# pairs. DOIs are bare (no scheme), matched case-insensitively.
+RECOGNITION_EXCLUSIONS = {
+    # 'PAA' here is phenylacetic acid (the released plant-growth regulator),
+    # NOT polyacrylic acid.
+    ("polyacrylic_acid", "10.1007/s10853-016-9775-0"),
+    # 'CMCS' here is carboxymethyl starch(es); the paper contains no chitosan.
+    ("carboxymethyl_chitosan", "10.1007/s10570-026-07077-1"),
+}
 
 
 # --- Discovery gazetteer ---------------------------------------------------
