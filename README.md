@@ -25,8 +25,9 @@ jupyter notebook          # run any 0N_*.ipynb from the repo root
 
 ## Layout
 
-- `data/` — CSVs and raw inputs (incl. `corpus.jsonl` for NB08)
-- `models/` — pre-trained artifacts (`all_properties/`, `BO/`, stress ensemble)
-- `utils/`, `matsci_ml/`, `mltoolkit/` — vendored project libraries
+- `data/` — CSVs and raw inputs (incl. `corpus.jsonl` for NB08, microgravity accelerometer trace for NB07)
+- `models/` — pre-trained artifacts (`all_properties/`, `BO/`, stress ensemble; NB03 committee build-result under `BO/committee_v7pub/`)
+- `utils/`, `matsci_ml/`, `mltoolkit/` — vendored project libraries (`matsci_ml/` also holds the `stress_ensemble` helper)
 - `sem_porosity/`, `auto_compression/`, `material_frequency/` — notebook-specific modules + inputs
-- `plots_*/` — figure outputs
+- `plots/` — figure outputs, one subfolder per notebook group: `citation_frequency/`, `all_properties/`, `bo/`, `compression/`, `microgravity/`, `o2/`
+- `reports/` — corpus bibliography: `corpus_articles.csv` lists all literature in the NB08 corpus
