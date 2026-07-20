@@ -1,9 +1,7 @@
 """SEM pore-overlay generation (hybrid Otsu + absolute-darkness threshold).
 
-Distilled from quantify_porosity{,_pva,_figs1}.py. A pore is a dark region
-(below both the Otsu threshold and an absolute darkness floor). The PVA series
-additionally applies a shape filter to reject scratch-like / ragged regions;
-the figs1 series crops the SEM info banner first.
+A pore is a dark region (below both the Otsu threshold and an absolute darkness floor). 
+The PVA series additionally applies a shape filter to reject scratch-like / ragged regions;
 """
 import numpy as np
 from PIL import Image
