@@ -1,13 +1,12 @@
 # proj_mg_pub
 
-Self-contained repository reproducing the publication figures for the microgreen
-material-optimization study. Every notebook runs end-to-end using only the data and
-**pre-trained** models in this repo — no model training, no external paths.
+Reproduce the figures/analysis for Robotics–Machine Learning Accelerated Discovery of
+Aerogel-Induced Hydrogels for Extraterrestrial Microgreen Farming study.
 
 ```bash
 conda env create -f environment.yml
-conda activate proj_mg_pub
-jupyter notebook          # run any 0N_*.ipynb from the repo root
+conda activate proj_mg_pub  
+jupyter notebook          
 ```
 
 ## Notebooks
