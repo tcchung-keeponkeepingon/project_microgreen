@@ -89,14 +89,6 @@ ROLES = [
         _m("pva", "polyvinyl alcohol",
            ["polyvinyl alcohol", "poly(vinyl alcohol)", "polyvinylalcohol"],
            [r"poly\s?\(?vinyl alcohol\)?", r"polyvinylalcohol", r"\bpva\b"], selected=True),
-        _m("peg", "polyethylene glycol / oxide",
-           ["polyethylene glycol", "poly(ethylene glycol)", "polyethylene oxide",
-            "poly(ethylene oxide)"],
-           [r"poly\s?\(?ethylene glycol\)?", r"poly\s?\(?ethylene oxide\)?",
-            r"\bpeg\b", r"\bpeo\b"]),
-        _m("pvp", "polyvinylpyrrolidone",
-           ["polyvinylpyrrolidone", "poly(vinylpyrrolidone)", "povidone"],
-           [r"polyvinylpyrrolidone", r"poly\(vinylpyrrolidone\)", r"povidone", r"\bpvp\b"]),
         _m("cnf", "cellulose nanofiber",
            ["cellulose nanofiber", "cellulose nanofibers", "nanocellulose",
             "nanofibrillated cellulose", "cellulose nanofibril"],
@@ -114,11 +106,17 @@ ROLES = [
         _m("guar_gum", "guar gum", ["guar gum", "guar"], [r"\bguar\b"]),
         _m("locust_bean_gum", "locust bean gum", ["locust bean gum", "ceratonia"],
            [r"locust bean gum", r"\blbg\b", r"ceratonia"]),
-        _m("gum_arabic", "gum arabic", ["gum arabic", "acacia gum", "arabic gum"],
-           [r"gum arabic", r"acacia gum", r"arabic gum"]),
-        _m("cashew_gum", "cashew gum", ["cashew gum"], [r"cashew gum", r"anacardium"]),
         _m("pullulan", "pullulan", ["pullulan"], [r"pullulan"]),
-        _m("sericin", "silk sericin", ["sericin", "silk sericin"], [r"sericin"]),
+        # NOTE: Role 3 is restricted to hydroxyl (-OH) hydrogen-bonding glues.
+        # Removed materials (do not fit the -OH premise):
+        #  - gum arabic, cashew gum, silk sericin: carry carboxylate groups in
+        #    native form (gum arabic ~16-17% uronic acid; cashew gum ~5%
+        #    glucuronic acid; sericin ~18-24% Asp+Glu acidic residues).
+        #  - PVP (polyvinylpyrrolidone): no -OH at all; H-bonds via the lactam
+        #    carbonyl (acceptor), not a hydroxyl donor.
+        #  - PEG/PEO (polyethylene glycol/oxide): only 2 terminal -OH per chain;
+        #    H-bonding is ether-oxygen dominated, not hydroxyl-driven.
+        # See material_frequency carboxylate / -OH audit (2026-07).
     ]),
     ("Role 4 - Non-calcium gelation (thermal / cationic / covalent)", [
         _m("agar", "agar", ["agar", "agar-agar"], [r"\bagar\b", r"agar-agar"]),
@@ -173,6 +171,19 @@ RECOGNITION_EXCLUSIONS = {
     ("polyacrylic_acid", "10.1007/s10853-016-9775-0"),
     # 'CMCS' here is carboxymethyl starch(es); the paper contains no chitosan.
     ("carboxymethyl_chitosan", "10.1007/s10570-026-07077-1"),
+    # --- CNF native-grade curation -------------------------------------------
+    # Role 3 counts CNF only as a HYDROXYL H-bonding material. These papers use a
+    # cellulose nanofiber that is carboxylated (TEMPO-oxidized / "carboxylated CNF"
+    # / acrylic-acid-grafted backbone) or whose grade is not stated in the
+    # abstract, so they do not qualify as native (hydroxyl-only) CNF. Kept as
+    # native CNF: 10.1039/d3ra08725e, 10.1021/acsapm.3c00109,
+    # 10.1016/j.giant.2024.100270, 10.3390/fib10090073, 10.1016/j.jece.2025.116716.
+    ("cnf", "10.1021/acs.jafc.6b05815"),    # TEMPO-oxidized; explicit carboxylate content
+    ("cnf", "10.3390/gels12020157"),        # "carboxylated cellulose nanofibers"
+    ("cnf", "10.1007/s10853-026-12465-w"),  # CNF backbone grafted with acrylic acid
+    ("cnf", "10.1002/adfm.202506427"),      # grade unspecified in abstract
+    ("cnf", "10.1007/s10924-023-03103-6"),  # grade unspecified in abstract
+    ("cnf", "10.1007/s10570-026-07077-1"),  # false positive: 'nanocellulose' in affiliation only
 }
 
 
