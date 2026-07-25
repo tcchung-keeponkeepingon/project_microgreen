@@ -3,7 +3,6 @@ query, the role-based material lexicon, and per-(material, DOI) recognition
 exclusions.
 """
 
-# --- Locked corpus (plant-application hydrogel substrates) ----------------
 # Gel-family context only; plant-application phrases only (no biomedical leakage).
 CONTEXT = "(hydrogel OR aerogel OR cryogel OR xerogel)"
 APP_PLANT = (
@@ -19,11 +18,9 @@ def _m(key, label, openalex, regex, selected=False):
             "selected": selected}
 
 
-# --- Role-based lexicon ----------------------------------------------------
-# `openalex`: phrases used to build server-side count queries (full names only;
-#             NO bare abbreviations — they can't be word-boundary-matched server-side).
-# `regex`:    case-insensitive local patterns (abbreviations allowed, the corpus
-#             is already gated) used for discovery / representative labelling.
+# `openalex`: phrases used to build server-side count queries.
+# `regex`:    case-insensitive local patterns 
+
 ROLES = [
     ("Role 1 - Specific calcium-ion junction zones (egg-box / ion-bridged helix)", [
         _m("alginate", "alginate",
@@ -116,15 +113,12 @@ ROLES = [
     ]),
 ]
 
-# --- Per-(material, DOI) recognition exclusions ----------------------------
-# Suppress (material, DOI) pairs where the regex hit is a different compound /
-# non-native grade in that paper. (Papers stay in the corpus via other R1/2/3
-# materials; only the collided material is suppressed.)
+# Exclusion
 RECOGNITION_EXCLUSIONS = {
     ("polyacrylic_acid", "10.1007/s10853-016-9775-0"),        # PAA = phenylacetic acid
     ("carboxymethyl_chitosan", "10.1007/s10570-026-07077-1"), # CMCS = carboxymethyl starch
     ("cnf", "10.1007/s10853-026-12465-w"),                    # acrylic-acid-grafted CNF
     ("cnf", "10.1002/adfm.202506427"),                        # grade unspecified
     ("cnf", "10.1007/s10924-023-03103-6"),                    # grade unspecified
-    ("cnf", "10.1007/s10570-026-07077-1"),                    # affiliation-only false positive
+    ("cnf", "10.1007/s10570-026-07077-1"),                    # false positive
 }
