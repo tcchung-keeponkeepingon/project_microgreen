@@ -21,7 +21,6 @@ ACS,ACS Sustainable Chemistry & Engineering,https://doi.org/10.1021/acssuschemen
 ACS,ACS Sustainable Chemistry & Engineering,https://doi.org/10.1021/acssuschemeng.5c02351
 ACS,ACS Sustainable Chemistry & Engineering,https://doi.org/10.1021/acssuschemeng.4c01003
 ACS,Biomacromolecules,https://doi.org/10.1021/acs.biomac.5c02444
-ACS,Journal of Agricultural and Food Chemistry,https://doi.org/10.1021/acs.jafc.6b05815
 ACS,Journal of Agricultural and Food Chemistry,https://doi.org/10.1021/acs.jafc.9b03484
 ACS,Journal of Agricultural and Food Chemistry,https://doi.org/10.1021/acs.jafc.5c09015
 ACS,Langmuir,https://doi.org/10.1021/acs.langmuir.3c02256
@@ -52,7 +51,6 @@ Elsevier,Journal of environmental chemical engineering,https://doi.org/10.1016/j
 Elsevier,Journal of Industrial and Engineering Chemistry,https://doi.org/10.1016/j.jiec.2025.10.020
 Elsevier,Next Materials,https://doi.org/10.1016/j.nxmate.2025.101216
 Elsevier,Next Sustainability,https://doi.org/10.1016/j.nxsust.2026.100331
-Elsevier,Phytomedicine Plus,https://doi.org/10.1016/j.phyplu.2023.100415
 Elsevier,Procedia Engineering,https://doi.org/10.1016/j.proeng.2016.06.573
 Elsevier,Sustainable Chemistry for Climate Action,https://doi.org/10.1016/j.scca.2026.100224
 Elsevier,Water Research,https://doi.org/10.1016/j.watres.2026.126006
@@ -66,7 +64,6 @@ MDPI,Gels,https://doi.org/10.3390/gels12030235
 MDPI,Gels,https://doi.org/10.3390/gels11120957
 MDPI,Gels,https://doi.org/10.3390/gels10060368
 MDPI,Gels,https://doi.org/10.3390/gels11120947
-MDPI,Gels,https://doi.org/10.3390/gels12020157
 MDPI,Gels,https://doi.org/10.3390/gels9120988
 MDPI,Gels,https://doi.org/10.3390/gels12020144
 MDPI,Gels,https://doi.org/10.3390/gels10050322
@@ -92,7 +89,6 @@ MDPI,Polymers,https://doi.org/10.3390/polym17243323
 MDPI,Polymers,https://doi.org/10.3390/polym16101442
 MDPI,Polymers,https://doi.org/10.3390/polym10030271
 MDPI,Sensors,https://doi.org/10.3390/s24196197
-MDPI,Sustainability,https://doi.org/10.3390/su17020501
 MDPI,Water,https://doi.org/10.3390/w15111972
 RSC,Chemical Communications,https://doi.org/10.1039/c8cc07872f
 RSC,Molecular Omics,https://doi.org/10.1039/d4mo00192c
@@ -100,9 +96,7 @@ RSC,RSC Advances,https://doi.org/10.1039/d1ra08786j
 RSC,RSC Advances,https://doi.org/10.1039/d3ra08725e
 RSC,RSC Advances,https://doi.org/10.1039/c4ra05300a
 Springer Nature,Advanced Composites and Hybrid Materials,https://doi.org/10.1007/s42114-025-01422-x
-Springer Nature,Advances in Traditional Medicine,https://doi.org/10.1007/s13596-026-00906-5
 Springer Nature,Biomass Conversion and Biorefinery,https://doi.org/10.1007/s13399-022-02805-6
-Springer Nature,Bulletin of Materials Science,https://doi.org/10.1007/s12034-021-02383-9
 Springer Nature,Cellulose,https://doi.org/10.1007/s10570-024-05968-9
 Springer Nature,Cellulose,https://doi.org/10.1007/s10570-026-07077-1
 Springer Nature,Chemical Papers,https://doi.org/10.1007/s11696-020-01210-5
@@ -117,7 +111,6 @@ Springer Nature,Journal of Polymer Research,https://doi.org/10.1007/s10965-025-0
 Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-018-1302-8
 Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-020-01806-8
 Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-025-03605-5
-Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-024-03339-w
 Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-021-02322-z
 Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-019-01593-x
 Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/s10924-022-02543-w
@@ -125,7 +118,6 @@ Springer Nature,Journal of Polymers and the Environment,https://doi.org/10.1007/
 Springer Nature,Journal of soil science and plant nutrition,https://doi.org/10.1007/s42729-025-02542-5
 Springer Nature,Nature Communications,https://doi.org/10.1038/s41467-025-56988-3
 Springer Nature,Plant and Soil,https://doi.org/10.1007/s11104-025-07454-y
-Springer Nature,Plant and Soil,https://doi.org/10.1007/s11104-019-03939-9
 Springer Nature,Polymer Bulletin,https://doi.org/10.1007/s00289-026-06398-2
 Springer Nature,Polymer Bulletin,https://doi.org/10.1007/s00289-023-04901-7
 Springer Nature,Polymer Bulletin,https://doi.org/10.1007/s00289-026-06529-9
@@ -138,11 +130,9 @@ Springer Nature,Scientific Reports,https://doi.org/10.1038/s41598-017-16253-0
 Springer Nature,Scientific Reports,https://doi.org/10.1038/s41598-025-99666-6
 Springer Nature,Scientific Reports,https://doi.org/10.1038/s41598-026-44948-w
 Springer Nature,Scientific Reports,https://doi.org/10.1038/s41598-023-38445-7
-Springer Nature,Scientific Reports,https://doi.org/10.1038/s41598-024-76255-7
 Springer Nature,World Journal of Microbiology and Biotechnology,https://doi.org/10.1007/s11274-026-04815-2
 Taylor & Francis,Communications in Soil Science and Plant Analysis,https://doi.org/10.1080/00103624.2022.2028818
 Taylor & Francis,Communications in Soil Science and Plant Analysis,https://doi.org/10.1080/00103624.2024.2378973
-Taylor & Francis,Compost Science & Utilization,https://doi.org/10.1080/1065657x.2012.10737015
 Taylor & Francis,Environmental Technology,https://doi.org/10.1080/09593330.2013.831461
 Taylor & Francis,Natural Product Research,https://doi.org/10.1080/14786419.2024.2324463
 Wiley,Advanced Functional Materials,https://doi.org/10.1002/adfm.202510234
@@ -165,7 +155,6 @@ Wiley,Journal of Applied Polymer Science,https://doi.org/10.1002/app.53311
 Wiley,Journal of Applied Polymer Science,https://doi.org/10.1002/app.41060
 Wiley,Journal of Applied Polymer Science,https://doi.org/10.1002/app.20571
 Wiley,Journal of Applied Polymer Science,https://doi.org/10.1002/app.25916
-Wiley,Journal of Sustainable Agriculture and Environment,https://doi.org/10.1002/sae2.70092
 Wiley,Legume Science,https://doi.org/10.1002/leg3.70083
 Wiley,Macromolecular Symposia,https://doi.org/10.1002/masy.200950534
 Wiley,Modern Agriculture,https://doi.org/10.1002/moda.70025

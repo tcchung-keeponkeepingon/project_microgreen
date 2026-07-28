@@ -1,15 +1,8 @@
-"""Configuration: locked corpus, the role-based material lexicon, discovery
-gazetteer, and target journals. Editing this file is how you 'revisit' after
-discovery — promote a discovered material into the right role group and re-run
-(re-runs are cache-served, so it's cheap).
+"""Configuration for 08_material_frequency.ipynb: the locked-corpus search
+query, the role-based material lexicon, and per-(material, DOI) recognition
+exclusions.
 """
 
-# --- OpenAlex polite pool -------------------------------------------------
-# `mailto` sends NO email; it just opts requests into OpenAlex's faster, more
-# stable "polite pool". Swap freely.
-EMAIL = "s55751939@gmail.com"
-
-# --- Locked corpus (plant-application hydrogel substrates) ----------------
 # Gel-family context only; plant-application phrases only (no biomedical leakage).
 CONTEXT = "(hydrogel OR aerogel OR cryogel OR xerogel)"
 APP_PLANT = (
@@ -19,38 +12,15 @@ APP_PLANT = (
 )
 CORPUS = f"{CONTEXT} AND {APP_PLANT}"
 
-# Supplementary "gelator pedigree" count for gellan: its real footprint is in
-# tissue-culture vocabulary, NOT framed as a hydrogel (see memory gellan-vocabulary-gap).
-GELLAN_PEDIGREE = (
-    '("gellan gum" OR Phytagel OR Gelrite) AND ("plant tissue culture" OR micropropagation '
-    'OR "tissue culture" OR "culture medium" OR explant OR callus)'
-)
-
-# Supplementary GELLING-AGENT corpus: a DIFFERENT corpus (a lens), NOT the headline.
-# Swaps the gel-family CONTEXT for gelling-agent / tissue-culture framing while keeping
-# the same plant gate (APP_PLANT). Used by footprint.py to re-count Role 1 gelators that
-# the engineered-hydrogel corpus under-represents (e.g. gellan, agar). Not merged into
-# the locked prevalence metric.
-GELLING_FRAME = (
-    '("gelling agent" OR "solidifying agent" OR "gelling agents" OR "solidifying agents" '
-    'OR "tissue culture" OR micropropagation OR "culture medium" OR explant OR callus)'
-)
-GELLING_CORPUS = f"{GELLING_FRAME} AND {APP_PLANT}"
-
-# --- The four selected building blocks ------------------------------------
-SELECTED = {"gellan_gum", "alginate", "cmc", "pva"}
-
 
 def _m(key, label, openalex, regex, selected=False):
     return {"key": key, "label": label, "openalex": openalex, "regex": regex,
             "selected": selected}
 
 
-# --- Role-based lexicon ----------------------------------------------------
-# `openalex`: phrases used to build server-side count queries (full names only;
-#             NO bare abbreviations — they can't be word-boundary-matched server-side).
-# `regex`:    case-insensitive local patterns (abbreviations allowed, the corpus
-#             is already gated) used for discovery / representative labelling.
+# `openalex`: phrases used to build server-side count queries.
+# `regex`:    case-insensitive local patterns 
+
 ROLES = [
     ("Role 1 - Specific calcium-ion junction zones (egg-box / ion-bridged helix)", [
         _m("alginate", "alginate",
@@ -89,14 +59,6 @@ ROLES = [
         _m("pva", "polyvinyl alcohol",
            ["polyvinyl alcohol", "poly(vinyl alcohol)", "polyvinylalcohol"],
            [r"poly\s?\(?vinyl alcohol\)?", r"polyvinylalcohol", r"\bpva\b"], selected=True),
-        _m("peg", "polyethylene glycol / oxide",
-           ["polyethylene glycol", "poly(ethylene glycol)", "polyethylene oxide",
-            "poly(ethylene oxide)"],
-           [r"poly\s?\(?ethylene glycol\)?", r"poly\s?\(?ethylene oxide\)?",
-            r"\bpeg\b", r"\bpeo\b"]),
-        _m("pvp", "polyvinylpyrrolidone",
-           ["polyvinylpyrrolidone", "poly(vinylpyrrolidone)", "povidone"],
-           [r"polyvinylpyrrolidone", r"poly\(vinylpyrrolidone\)", r"povidone", r"\bpvp\b"]),
         _m("cnf", "cellulose nanofiber",
            ["cellulose nanofiber", "cellulose nanofibers", "nanocellulose",
             "nanofibrillated cellulose", "cellulose nanofibril"],
@@ -114,13 +76,9 @@ ROLES = [
         _m("guar_gum", "guar gum", ["guar gum", "guar"], [r"\bguar\b"]),
         _m("locust_bean_gum", "locust bean gum", ["locust bean gum", "ceratonia"],
            [r"locust bean gum", r"\blbg\b", r"ceratonia"]),
-        _m("gum_arabic", "gum arabic", ["gum arabic", "acacia gum", "arabic gum"],
-           [r"gum arabic", r"acacia gum", r"arabic gum"]),
-        _m("cashew_gum", "cashew gum", ["cashew gum"], [r"cashew gum", r"anacardium"]),
         _m("pullulan", "pullulan", ["pullulan"], [r"pullulan"]),
-        _m("sericin", "silk sericin", ["sericin", "silk sericin"], [r"sericin"]),
     ]),
-    ("Role 4 - Non-calcium gelation (thermal / cationic / covalent)", [
+    ("Other - Non-calcium gelation (thermal / cationic / covalent)", [
         _m("agar", "agar", ["agar", "agar-agar"], [r"\bagar\b", r"agar-agar"]),
         _m("agarose", "agarose", ["agarose"], [r"\bagarose\b"]),
         _m("gelatin", "gelatin", ["gelatin", "gelatine"], [r"\bgelatin"]),
@@ -155,75 +113,12 @@ ROLES = [
     ]),
 ]
 
-# Flat map key -> material for cross-role dedup of counts.
-MATERIALS = {}
-for _role, _mats in ROLES:
-    for _mat in _mats:
-        MATERIALS.setdefault(_mat["key"], _mat)
-
-
-# --- Per-(material, DOI) recognition exclusions ----------------------------
-# A regex can match a string that, in one specific paper, denotes a DIFFERENT
-# compound (an abbreviation / substring collision the pattern can't disambiguate
-# without over-blocking legitimate hits elsewhere). Suppress just those (key, doi)
-# pairs. DOIs are bare (no scheme), matched case-insensitively.
+# Exclusion
 RECOGNITION_EXCLUSIONS = {
-    # 'PAA' here is phenylacetic acid (the released plant-growth regulator),
-    # NOT polyacrylic acid.
-    ("polyacrylic_acid", "10.1007/s10853-016-9775-0"),
-    # 'CMCS' here is carboxymethyl starch(es); the paper contains no chitosan.
-    ("carboxymethyl_chitosan", "10.1007/s10570-026-07077-1"),
+    ("polyacrylic_acid", "10.1007/s10853-016-9775-0"),        # PAA = phenylacetic acid
+    ("carboxymethyl_chitosan", "10.1007/s10570-026-07077-1"), # CMCS = carboxymethyl starch
+    ("cnf", "10.1007/s10853-026-12465-w"),                    # acrylic-acid-grafted CNF
+    ("cnf", "10.1002/adfm.202506427"),                        # grade unspecified
+    ("cnf", "10.1007/s10924-023-03103-6"),                    # grade unspecified
+    ("cnf", "10.1007/s10570-026-07077-1"),                    # false positive
 }
-
-
-# --- Discovery gazetteer ---------------------------------------------------
-# Broad polymer / biomaterial / crosslinker vocabulary used to flag materials
-# that appear in the corpus but are NOT yet in the role lexicon above.
-# (Anything found here & absent from the lexicon -> reports/discovered_candidates.csv.)
-GAZETTEER = [
-    # polysaccharides / gums
-    "dextran", "cellulose acetate", "ethyl cellulose", "hydroxypropyl cellulose",
-    "gum ghatti", "gellan", "welan gum", "diutan gum", "tara gum", "cashew gum",
-    "psyllium", "inulin", "levan", "scleroglucan", "schizophyllan", "beta-glucan",
-    "chondroitin", "heparin", "fucoidan", "laminarin", "amylose", "amylopectin",
-    "cyclodextrin", "lignin", "lignosulfonate", "hemicellulose", "arabinoxylan",
-    # proteins
-    "zein", "soy protein", "whey protein", "casein", "keratin", "elastin",
-    "albumin", "gluten", "sericin",
-    # synthetic polymers
-    "polyethylenimine", "polyethyleneimine", "polylactic acid", "polycaprolactone",
-    "pluronic", "poloxamer", "polyurethane", "polydopamine", "polyaniline",
-    "polypyrrole", "poly(lactic-co-glycolic", "pegda", "gelma", "gelatin methacryloyl",
-    "acrylamide", "acrylic acid", "methacrylate", "polyacrylonitrile",
-    # nanofillers / inorganics / substrates
-    "graphene", "graphene oxide", "carbon nanotube", "montmorillonite", "laponite",
-    "halloysite", "silica", "hydroxyapatite", "bentonite", "kaolin", "zeolite",
-    "vermiculite", "perlite", "biochar", "attapulgite", "clay",
-    # crosslinkers / additives
-    "calcium chloride", "glutaraldehyde", "genipin", "borax", "boric acid",
-    "citric acid", "tannic acid", "epichlorohydrin", "polyphosphate",
-]
-
-
-# --- Target journals (soft preference for representative papers) -----------
-# We do NOT filter the corpus by journal (would bias the denominator); we only
-# flag representative papers that sit in these high-impact / on-topic venues.
-TARGET_JOURNALS = [
-    # polymer / hydrocolloid / biomaterials
-    "carbohydrate polymers", "international journal of biological macromolecules",
-    "food hydrocolloids", "biomacromolecules", "gels",
-    "acs applied materials & interfaces", "acs applied materials and interfaces",
-    "advanced functional materials", "advanced materials", "advanced healthcare materials",
-    "acta biomaterialia", "biomaterials", "chemical engineering journal",
-    "materials today", "acs nano", "acs sustainable chemistry & engineering",
-    # plant / agriculture / food
-    "nature plants", "plant cell, tissue and organ culture", "plant cell tissue and organ culture",
-    "scientia horticulturae", "frontiers in plant science",
-    "journal of agricultural and food chemistry", "food chemistry",
-    "postharvest biology and technology", "agricultural water management",
-    # space / controlled-environment agriculture
-    "npj microgravity", "life sciences in space research", "astrobiology",
-    "frontiers in astronomy and space sciences",
-    # high-generalist
-    "nature communications", "science advances", "nature", "science",
-]
