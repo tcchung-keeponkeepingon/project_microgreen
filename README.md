@@ -1,4 +1,4 @@
-# proj_mg_pub
+# Robotics–Machine Learning Accelerated Discovery of Aerogel-Induced Hydrogels for Extraterrestrial Microgreen Farming
 
 Reproduce the figures/analysis for Robotics–Machine Learning Accelerated Discovery of
 Aerogel-Induced Hydrogels for Extraterrestrial Microgreen Farming study.
