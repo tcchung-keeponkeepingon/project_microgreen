@@ -24,7 +24,12 @@ jupyter notebook
 
 ## Layout
 
-- `data/` — CSVs and raw inputs (incl. `corpus.jsonl` for NB08, microgravity accelerometer trace for NB07)
+- `data/` — CSVs and raw inputs for the notebooks:
+  - `db_all_properties.csv` — 168 GUM/ALG/PVA/CMC formulations with mass loading, grade, water retention and stress at 25% (NB01)
+  - `mustard_fresh_weight.csv` — 30 formulations with mustard areal fresh weight ± SD (NB02, NB03)
+  - `o2_relative.csv` — relative O₂ (%), Pure GUM vs Best formulation, 5 reps each (NB06)
+  - `kale_amaranth_afw.csv` — kale/amaranth areal fresh weight (mg/cm²), Pure GUM vs Best formulation, 3 reps each (NB06)
+  - `accelerometer.txt` — WT901BLE microgravity trace (NB07)
 - `models/` — pre-trained artifacts (`all_properties/`, `BO/`, stress ensemble; NB03 committee build-result under `BO/committee_v7pub/`)
 - `utils/`, `matsci_ml/`, `mltoolkit/` — vendored project libraries (`matsci_ml/` also holds the `stress_ensemble` helper)
 - `sem_porosity/`, `auto_compression/`, `material_frequency/` — notebook-specific modules + inputs
