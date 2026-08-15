@@ -1,7 +1,17 @@
+import os
+
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas
+
+# Byte-stable SVG re-renders. Without these, matplotlib salts every generated
+# clip-path/marker id with a fresh uuid and stamps the wall-clock time into
+# <dc:date>, so re-running a notebook rewrites the whole figure file even when
+# the plot itself is identical.
+mpl.rcParams['svg.hashsalt'] = 'project_microgreen'
+os.environ.setdefault('SOURCE_DATE_EPOCH', '1735689600')   # 2025-01-01T00:00:00Z
 
 def scatter_by_mass(mass_values, data, x_var='ALG', y_var='PVA', z_var='GUM', 
                     y_col='Kale afw (g/cm2)', ncols=2, nrows=1, 
