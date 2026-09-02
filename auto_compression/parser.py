@@ -11,6 +11,7 @@ class SpecimenData:
     specimen_num: int
     strain: pd.Series  # X (%)
     stress: pd.Series  # Y (kPa)
+    height_mm: float | None = None  # specimen height (continuous path only)
 
 
 def extract_sample_name(filepath: Path) -> str:
@@ -80,69 +81,94 @@ def parse_folder(folder_path: Path) -> list[SpecimenData]:
 
 
 # ---------------------------------------------------------------------------
-# Continuous-recording format (e.g. "Robustness Test ... (Raw).csv")
+# Continuous-recording format ("Robustness Test - Compression (Second Test).csv")
 #
 # Unlike the per-specimen Instron exports above (one ``SID,"..."`` block with
-# repeated ``N,Time,Displacement,...`` section headers), these files are a
-# single uninterrupted recording in which many compression events run
-# back-to-back. There are no section-header rows to split on, the strain column
-# is ``Compressive strain (Displacement)`` and the column order is
-# strain-before-stress (the opposite of ``usecols=[4, 5]`` above), so the
-# section-based parser cannot read them. Segment by detecting strain peaks.
+# repeated ``N,Time,Displacement,...`` section headers), this file is a single
+# uninterrupted recording in which many compression events run back-to-back.
+# There are no section-header rows to split on, so the section-based parser
+# cannot read it. Segment by detecting the displacement peak of each event.
+#
+# The file carries engineering stress over the true specimen cross-section
+# (``SPECIMEN_AREA_MM2``). It has no strain column: the instrument's own strain
+# channel was referenced to the fixture gap rather than to the specimen, and a
+# specimen-referenced strain cannot be tabulated per row because it is defined
+# only inside a loading event. It is derived per event below.
 # ---------------------------------------------------------------------------
 
-STRAIN_COL = 'Compressive strain (Displacement)'  # X (%)
-STRESS_COL = 'Compressive stress'                 # Y (MPa)
+TIME_COL = 'Time (s)'
+DISP_COL = 'Displacement (mm)'
+FORCE_COL = 'Force (N)'
+STRESS_COL = 'Compressive stress (kPa)'  # Y (kPa)
+
+# Test-setup geometry. The specimen area is already applied in STRESS_COL; the
+# gap and holder heights are needed here because specimen height is not recorded.
+SPECIMEN_AREA_MM2 = 14.0 * 14.0  # true specimen cross-section
+FIXTURE_GAP_MM = 20.0            # platen separation at zero displacement
+HOLDER_HEIGHT_MM = 2.5           # holder beneath every specimen
+CONTACT_FORCE_N = 0.05           # force defining first platen-specimen contact
 
 
 def load_continuous_csv(filepath: Path) -> pd.DataFrame:
     """Load a continuous multi-event recording.
 
-    Row 0 is the column header, row 1 is the units row (dropped). All columns
-    are coerced to numeric and rows with missing strain/stress are removed.
+    All columns are coerced to numeric and rows with missing displacement or
+    stress are removed.
     """
-    df = pd.read_csv(filepath, skiprows=[1])
+    df = pd.read_csv(filepath)
     df = df.apply(pd.to_numeric, errors='coerce')
-    return df.dropna(subset=[STRAIN_COL, STRESS_COL]).reset_index(drop=True)
+    return df.dropna(subset=[DISP_COL, STRESS_COL]).reset_index(drop=True)
 
 
 def segment_loading_events(
     df: pd.DataFrame,
     sample_name: str = 'continuous',
     *,
-    peak_height: float = 30.0,
+    peak_height: float = 6.0,
     peak_distance: int = 100,
-    peak_prominence: float = 20.0,
-    liftoff_stress: float = 0.005,
+    peak_prominence: float = 4.0,
+    contact_force: float = CONTACT_FORCE_N,
 ) -> list[SpecimenData]:
     """Split a continuous recording into per-event loading branches.
 
-    Each compression event ramps strain up to a peak then unloads. We locate the
-    strain peaks, walk backward from each peak to the lift-off point (last sample
-    before stress rises above ``liftoff_stress``), and return the loading branch
-    (lift-off -> peak) with strain re-zeroed at lift-off, so every event starts
-    at ``(0, ~0)``. The unloading branch is intentionally discarded.
+    Each compression event ramps the crosshead down to a peak displacement then
+    unloads. We locate the displacement peaks, walk backward from each peak to
+    first contact (last sample before force rises above ``contact_force``), and
+    return the loading branch (contact -> peak). The unloading branch is
+    intentionally discarded.
+
+    Specimen height is not recorded, so it is reconstructed per event from the
+    contact displacement -- the specimen occupies whatever is left of the
+    fixture gap once the holder and the travel to contact are subtracted::
+
+        height_mm = FIXTURE_GAP_MM - HOLDER_HEIGHT_MM - displacement_at_contact
+
+    Strain is compressive strain referenced to that height, so every event
+    starts at ``(0, ~0)``.
 
     ``specimen_num`` is the 1-based event index in acquisition order.
     """
-    strain = df[STRAIN_COL].values
+    disp = df[DISP_COL].values
+    force = df[FORCE_COL].values
     stress = df[STRESS_COL].values
-    peaks, _ = find_peaks(strain, height=peak_height,
+    peaks, _ = find_peaks(disp, height=peak_height,
                           distance=peak_distance, prominence=peak_prominence)
 
     events = []
     for event_num, p in enumerate(peaks, 1):
         i = p
-        while i > 0 and stress[i] >= liftoff_stress:
+        while i > 0 and force[i] >= contact_force:
             i -= 1
         i_start = i + 1
-        e0 = float(strain[i_start])
-        rel_strain = strain[i_start:p + 1] - e0
+        d0 = float(disp[i_start])
+        height = FIXTURE_GAP_MM - HOLDER_HEIGHT_MM - d0
+        strain = (disp[i_start:p + 1] - d0) / height * 100.0
         events.append(SpecimenData(
             sample_name=sample_name,
             specimen_num=event_num,
-            strain=pd.Series(rel_strain).reset_index(drop=True),
+            strain=pd.Series(strain).reset_index(drop=True),
             stress=pd.Series(stress[i_start:p + 1]).reset_index(drop=True),
+            height_mm=height,
         ))
     return events
 

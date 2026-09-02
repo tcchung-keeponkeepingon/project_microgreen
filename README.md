@@ -32,6 +32,6 @@ jupyter notebook
   - `accelerometer.txt` — WT901BLE microgravity trace (NB07)
 - `models/` — pre-trained artifacts (`all_properties/`, `BO/`, stress ensemble; NB03 committee build-result under `BO/committee_v7pub/`)
 - `utils/`, `matsci_ml/`, `mltoolkit/` — vendored project libraries (`matsci_ml/` also holds the `stress_ensemble` helper)
-- `sem_porosity/`, `auto_compression/`, `material_frequency/` — notebook-specific modules + inputs
+- `sem_porosity/`, `auto_compression/`, `material_frequency/` — notebook-specific modules + inputs. The NB04 compression trace stores time, displacement and force as measured; compressive stress is engineering stress over the 14 x 14 mm specimen cross-section, and strain is referenced to each specimen's own height (20 mm fixture gap - 2.5 mm holder - displacement at first contact), derived per event in `auto_compression/parser.py`
 - `plots/` — figure outputs, one subfolder per notebook group: `citation_frequency/`, `all_properties/`, `bo/`, `compression/`, `microgravity/`, `o2/`
 - `reports/` — corpus bibliography: `corpus_articles.csv` lists all literature in the NB08 corpus
