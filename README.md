@@ -15,7 +15,7 @@ jupyter notebook
 |----------|---------|
 | `01_all_properties.ipynb` | Feasible-design-space maps: grade / water / stress raw + predicted, combined pass |
 | `02_bo_v7_heatmaps_3d.ipynb` | 3-D BO surfaces: GP mean (18/24/30 pts) + UCB acquisition (init / R3) |
-| `03_bo_v7_shap.ipynb` | SHAP feature importance for the 6-member ANN committee |
+| `03_bo_v7_shap.ipynb` | SHAP feature importance (mg cm⁻²) for the 6-member ANN committee |
 | `04_compression_robustness.ipynb` | Automated vs manual compression: mean±SD curves, Welch t-test, TOST equivalence |
 | `05_sem_porosity.ipynb` | SEM pore-overlay figures (Otsu + dark-floor segmentation) |
 | `06_o2_and_plant.ipynb` | Relative O₂ and Kale/Amaranth areal fresh weight |
@@ -30,7 +30,7 @@ jupyter notebook
   - `o2_relative.csv` — relative O₂ (%), Pure GUM vs Best formulation, 5 reps each (NB06)
   - `kale_amaranth_afw.csv` — kale/amaranth areal fresh weight (mg/cm²), Pure GUM vs Best formulation, 3 reps each (NB06)
   - `accelerometer.txt` — WT901BLE microgravity trace (NB07)
-- `models/` — pre-trained artifacts (`all_properties/`, `BO/`, stress ensemble; NB03 committee build-result under `BO/committee_v7pub/`)
+- `models/` — pre-trained artifacts (`all_properties/`, `BO/`, stress ensemble; NB03 committee build-result under `BO/committee_v7pub/`). The BO models were trained on mustard areal fresh weight normalized to the pure-GUM control (31 mg cm⁻², row `GUM` in `data/mustard_fresh_weight.csv`), so NB02 and NB03 multiply predictions and SHAP values by `NORM_TO_MG` to report them in mg cm⁻²
 - `utils/`, `matsci_ml/`, `mltoolkit/` — vendored project libraries (`matsci_ml/` also holds the `stress_ensemble` helper)
 - `sem_porosity/`, `auto_compression/`, `material_frequency/` — notebook-specific modules + inputs. The NB04 compression trace stores time, displacement and force as measured; compressive stress is engineering stress over the 14 x 14 mm specimen cross-section, and strain is referenced to each specimen's own height (20 mm fixture gap - 2.5 mm holder - displacement at first contact), derived per event in `auto_compression/parser.py`
 - `plots/` — figure outputs, one subfolder per notebook group: `citation_frequency/`, `all_properties/`, `bo/`, `compression/`, `microgravity/`, `o2/`
